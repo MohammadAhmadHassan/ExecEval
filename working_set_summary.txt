@@ -1,0 +1,20 @@
+Working set written to: .\working_set.json
+Total tasks extracted: 407
+
+By main category:
+  Logic      115
+  Mapping    143
+  Naming     71
+  Resource   78
+
+By subcategory:
+  Calculate Boundary Hallucination     38
+  Data Compliance Hallucination        48
+  External Source Hallucination        28
+  Identification Hallucination         43
+  Logic Breakdown                      23
+  Logic Deviation                      92
+  Physical Constraint Hallucination    40
+  Structural Access Hallucination      95
+
+Test cases per task: min 1, max 174, mean 17.8, median 8

@@ -83,7 +83,7 @@ RUN update-alternatives --install /usr/bin/java java "$JAVA_HOME"/bin/java 100 &
     update-alternatives --install /usr/bin/pypy3 pypy3 /usr/local/pypy3.9-v7.3.9-linux64/bin/pypy3 100 
 
 RUN apt-get install -y python3-pip gperf
-RUN pip install flask gunicorn flask-cors gmpy2 Cython jsonlines fire 
+RUN pip install flask gunicorn flask-cors gmpy2 Cython jsonlines fire PyYAML
 
 RUN curl -o libseccomp.tar.gz -L https://github.com/seccomp/libseccomp/releases/download/v2.5.4/libseccomp-2.5.4.tar.gz
 RUN tar -xzvf libseccomp.tar.gz && cd libseccomp-2.5.4 && chmod +x configure

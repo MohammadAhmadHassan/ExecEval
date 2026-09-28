@@ -1,0 +1,100 @@
+[17:31:59] Loaded 24 tasks (limit=24)
+[17:35:40]   5/24 tasks processed
+[17:37:58]   10/24 tasks processed
+[17:40:43]   15/24 tasks processed
+[17:43:30]   20/24 tasks processed
+[17:46:11] Building xlang_manifest.csv ...
+[17:46:11] Done. Tasks aligned in all 3 languages: 12/24
+[18:03:06] Active models: ['openai', 'anthropic', 'gemini']
+[18:03:07] Loaded 24 tasks (limit=24)
+[18:13:07]   5/24 tasks processed
+[18:16:33]   10/24 tasks processed
+[18:21:05]   15/24 tasks processed
+[18:24:13]   20/24 tasks processed
+[18:27:29] Building xlang_manifest.csv ...
+[18:27:29] Done. Tasks aligned in all 3 languages: 24/24
+[18:35:21] Active models: ['openai', 'anthropic', 'gemini']
+[18:35:22] Loaded 407 tasks (limit=None)
+[18:46:01]   5/407 tasks processed
+[18:51:22]   10/407 tasks processed
+[18:56:49]   15/407 tasks processed
+[19:00:13]   20/407 tasks processed
+[19:05:15]   25/407 tasks processed
+[19:08:13]   30/407 tasks processed
+[19:13:37]   35/407 tasks processed
+[19:18:20]   40/407 tasks processed
+[19:21:44]   45/407 tasks processed
+[19:26:33]   50/407 tasks processed
+[19:29:42]   55/407 tasks processed
+[19:31:59]   60/407 tasks processed
+[19:37:45]   65/407 tasks processed
+[19:40:46]   70/407 tasks processed
+[19:43:50]   75/407 tasks processed
+[19:47:33]   80/407 tasks processed
+[19:52:42]   85/407 tasks processed
+[19:56:02]   90/407 tasks processed
+[20:02:07]   95/407 tasks processed
+[20:06:13]   100/407 tasks processed
+[20:13:38]   105/407 tasks processed
+[20:15:21]   110/407 tasks processed
+[20:16:37]   115/407 tasks processed
+[20:24:56]   120/407 tasks processed
+[20:31:08]   125/407 tasks processed
+[20:39:38]   130/407 tasks processed
+[20:45:20]   135/407 tasks processed
+[20:50:21]   140/407 tasks processed
+[20:52:58]   145/407 tasks processed
+[20:55:41]   150/407 tasks processed
+[21:03:25]   155/407 tasks processed
+[21:08:30]   160/407 tasks processed
+[21:11:08]   165/407 tasks processed
+[21:16:48]   170/407 tasks processed
+[21:20:14]   175/407 tasks processed
+[21:27:41]   180/407 tasks processed
+[21:30:36]   185/407 tasks processed
+[21:32:13]   190/407 tasks processed
+[21:34:40]   195/407 tasks processed
+[21:37:19]   200/407 tasks processed
+[21:39:24]   205/407 tasks processed
+[21:45:29]   210/407 tasks processed
+[21:49:20]   215/407 tasks processed
+[21:51:22]   220/407 tasks processed
+[21:56:09]   225/407 tasks processed
+[21:58:21]   230/407 tasks processed
+[22:01:42]   235/407 tasks processed
+[22:05:29]   240/407 tasks processed
+[22:08:09]   245/407 tasks processed
+[22:10:24]   250/407 tasks processed
+[22:12:51]   255/407 tasks processed
+[22:14:58]   260/407 tasks processed
+[22:17:31]   265/407 tasks processed
+[22:19:42]   270/407 tasks processed
+[22:21:54]   275/407 tasks processed
+[22:24:17]   280/407 tasks processed  [gemini disabled: 8 fails]
+[22:26:21]   285/407 tasks processed  [gemini disabled: 8 fails]
+[22:28:18]   290/407 tasks processed  [gemini disabled: 8 fails]
+[22:30:06]   295/407 tasks processed  [gemini disabled: 8 fails]
+[22:32:19]   300/407 tasks processed  [gemini disabled: 8 fails]
+[22:34:49]   305/407 tasks processed  [gemini disabled: 8 fails]
+[22:37:22]   310/407 tasks processed  [gemini disabled: 8 fails]
+[22:39:40]   315/407 tasks processed  [gemini disabled: 8 fails]
+[22:42:20]   320/407 tasks processed  [gemini disabled: 8 fails]
+[22:44:13]   325/407 tasks processed  [gemini disabled: 8 fails]
+[22:46:58]   330/407 tasks processed  [gemini disabled: 8 fails]
+[22:49:22]   335/407 tasks processed  [gemini disabled: 8 fails]
+[22:52:04]   340/407 tasks processed  [gemini disabled: 8 fails]
+[22:54:21]   345/407 tasks processed  [gemini disabled: 8 fails]
+[22:56:39]   350/407 tasks processed  [gemini disabled: 8 fails]
+[22:59:00]   355/407 tasks processed  [gemini disabled: 8 fails]
+[23:01:33]   360/407 tasks processed  [gemini disabled: 8 fails]
+[23:04:23]   365/407 tasks processed  [gemini disabled: 8 fails]
+[23:06:56]   370/407 tasks processed  [gemini disabled: 8 fails]
+[23:09:02]   375/407 tasks processed  [gemini disabled: 8 fails]
+[23:11:33]   380/407 tasks processed  [gemini disabled: 8 fails]
+[23:13:51]   385/407 tasks processed  [gemini disabled: 8 fails]
+[23:16:27]   390/407 tasks processed  [gemini disabled: 8 fails]
+[23:18:53]   395/407 tasks processed  [gemini disabled: 8 fails]
+[23:21:21]   400/407 tasks processed  [gemini disabled: 8 fails]
+[23:23:46]   405/407 tasks processed  [gemini disabled: 8 fails]
+[23:24:38] Building xlang_manifest.csv ...
+[23:24:38] Done. Tasks aligned in all 3 languages: 331/390

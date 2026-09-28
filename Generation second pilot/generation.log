@@ -1,0 +1,12 @@
+[15:02:08] Loaded 5 tasks | langs=['python', 'java', 'cpp'] | models=['gpt-5-mini', 'claude-haiku'] | samples=3
+[15:09:21]   progress: 10/90 generations (task 26, java, claude-haiku)
+[15:14:18]   progress: 20/90 generations (task 527, python, gpt-5-mini)
+[15:18:04]   progress: 30/90 generations (task 527, java, claude-haiku)
+[15:23:19]   progress: 40/90 generations (task 3858, python, claude-haiku)
+[15:29:54]   progress: 50/90 generations (task 3858, cpp, gpt-5-mini)
+[15:32:29]   progress: 60/90 generations (task 4089, python, claude-haiku)
+[15:34:29]   progress: 70/90 generations (task 4089, cpp, claude-haiku)
+[15:36:00]   progress: 80/90 generations (task 328, java, gpt-5-mini)
+[15:37:15]   progress: 90/90 generations (task 328, cpp, claude-haiku)
+[15:37:15] Building summary CSV ...
+[15:37:15] Done. Detailed: generations.jsonl  |  Summary: generations_summary.csv

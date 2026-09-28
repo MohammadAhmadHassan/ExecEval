@@ -1,0 +1,69 @@
+[15:21:27] Files to process: 1
+[15:21:27]   - calculate_boundary_hallucination.json
+[15:21:28] === calculate_boundary_hallucination.json: 60 tasks ===
+[15:22:15]   calculate_boundary_hallucination.json: 20/60 processed (usable 14, unusable 2, nosol 4)
+[15:23:17]   calculate_boundary_hallucination.json: 40/60 processed (usable 27, unusable 4, nosol 9)
+[15:23:25]   calculate_boundary_hallucination.json: 60/60 processed (usable 38, unusable 5, nosol 17)
+[15:23:25] --- calculate_boundary_hallucination.json done: USABLE 38 | UNUSABLE 5 | NO_SOL 17
+[15:23:25] ============================================================
+[15:23:25] SWEEP COMPLETE (this run)
+[15:23:25]   USABLE:   38
+[15:23:25]   UNUSABLE: 5
+[15:23:25]   NO_SOL:   17
+[15:23:25] Manifest written to: codehalu_manifest.csv
+[15:23:25] Note: totals above are for THIS run; open the CSV for the full picture
+[15:23:25] (including any tasks completed in earlier resumed runs).
+[15:26:34] Resuming: 60 tasks already in codehalu_manifest.csv, will skip them.
+[15:26:34] Files to process: 8
+[15:26:34]   - calculate_boundary_hallucination.json
+[15:26:34]   - data_compliance_hallucination.json
+[15:26:34]   - external_source_hallucination.json
+[15:26:34]   - identification_hallucination.json
+[15:26:34]   - logic_breakdown.json
+[15:26:34]   - logic_deviation.json
+[15:26:34]   - physical_constraint_hallucination.json
+[15:26:34]   - structural_access_hallucination.json
+[15:26:34] === calculate_boundary_hallucination.json: 60 tasks ===
+[15:26:34] --- calculate_boundary_hallucination.json done: USABLE 0 | UNUSABLE 0 | NO_SOL 0
+[15:26:35] === data_compliance_hallucination.json: 110 tasks ===
+[15:26:48]   data_compliance_hallucination.json: 40/110 processed (usable 19, unusable 8, nosol 13)
+[15:27:09]   data_compliance_hallucination.json: 80/110 processed (usable 29, unusable 11, nosol 40)
+[15:27:20]   data_compliance_hallucination.json: 100/110 processed (usable 42, unusable 13, nosol 45)
+[15:27:22] --- data_compliance_hallucination.json done: USABLE 48 | UNUSABLE 13 | NO_SOL 49
+[15:27:22] === external_source_hallucination.json: 42 tasks ===
+[15:28:00]   external_source_hallucination.json: 20/42 processed (usable 15, unusable 0, nosol 5)
+[15:28:05] --- external_source_hallucination.json done: USABLE 28 | UNUSABLE 1 | NO_SOL 13
+[15:28:05] === identification_hallucination.json: 115 tasks ===
+[15:28:57]   identification_hallucination.json: 40/115 processed (usable 16, unusable 3, nosol 21)
+[15:29:15]   identification_hallucination.json: 60/115 processed (usable 31, unusable 6, nosol 23)
+[15:29:24]   identification_hallucination.json: 80/115 processed (usable 41, unusable 9, nosol 30)
+[15:29:38]   identification_hallucination.json: 100/115 processed (usable 42, unusable 27, nosol 31)
+[15:29:48] --- identification_hallucination.json done: USABLE 43 | UNUSABLE 41 | NO_SOL 31
+[15:29:49] === logic_breakdown.json: 54 tasks ===
+[15:30:06]   logic_breakdown.json: 20/54 processed (usable 6, unusable 1, nosol 13)
+[15:30:24]   logic_breakdown.json: 40/54 processed (usable 16, unusable 3, nosol 21)
+[15:31:20] --- logic_breakdown.json done: USABLE 23 | UNUSABLE 5 | NO_SOL 26
+[15:31:21] === logic_deviation.json: 119 tasks ===
+[15:31:36]   logic_deviation.json: 20/119 processed (usable 15, unusable 3, nosol 2)
+[15:31:58]   logic_deviation.json: 40/119 processed (usable 31, unusable 4, nosol 5)
+[15:32:15]   logic_deviation.json: 60/119 processed (usable 50, unusable 5, nosol 5)
+[15:32:23]   logic_deviation.json: 80/119 processed (usable 68, unusable 7, nosol 5)
+[15:32:40] --- logic_deviation.json done: USABLE 92 | UNUSABLE 9 | NO_SOL 18
+[15:32:40] === physical_constraint_hallucination.json: 47 tasks ===
+[15:33:37]   physical_constraint_hallucination.json: 20/47 processed (usable 20, unusable 0, nosol 0)
+[15:34:12] --- physical_constraint_hallucination.json done: USABLE 40 | UNUSABLE 2 | NO_SOL 5
+[15:34:12] === structural_access_hallucination.json: 152 tasks ===
+[15:34:41]   structural_access_hallucination.json: 20/152 processed (usable 15, unusable 1, nosol 4)
+[15:34:48]   structural_access_hallucination.json: 40/152 processed (usable 30, unusable 3, nosol 7)
+[15:34:56]   structural_access_hallucination.json: 60/152 processed (usable 47, unusable 5, nosol 8)
+[15:35:00]   structural_access_hallucination.json: 80/152 processed (usable 57, unusable 7, nosol 16)
+[15:35:21]   structural_access_hallucination.json: 120/152 processed (usable 87, unusable 9, nosol 24)
+[15:35:28] --- structural_access_hallucination.json done: USABLE 95 | UNUSABLE 13 | NO_SOL 44
+[15:35:28] ============================================================
+[15:35:28] SWEEP COMPLETE (this run)
+[15:35:28]   USABLE:   369
+[15:35:28]   UNUSABLE: 84
+[15:35:28]   NO_SOL:   186
+[15:35:28] Manifest written to: codehalu_manifest.csv
+[15:35:28] Note: totals above are for THIS run; open the CSV for the full picture
+[15:35:28] (including any tasks completed in earlier resumed runs).
