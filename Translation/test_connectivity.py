@@ -1,17 +1,3 @@
-"""
-STEP 1: Connectivity test. Confirms each API key works with ONE tiny call
-before we do anything at scale. Run this FIRST.
-
-Setup (one time):
-    pip install openai anthropic google-genai python-dotenv
-    - copy .env.example to .env and paste your three real keys into it
-
-Run:
-    python test_connectivity.py
-It asks each model to translate a trivial Python line to Java and prints
-the result (or a clear error) for each. No CodeHalu data touched.
-"""
-
 import os
 from dotenv import load_dotenv
 load_dotenv()

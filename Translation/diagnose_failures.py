@@ -1,13 +1,3 @@
-"""
-Read translations.jsonl and show WHY translations failed, with the actual
-compiler/runtime error text and the failed code. Run after a pilot to see
-exactly what to fix in the prompt.
-
-Usage:
-    python diagnose_failures.py            # summarise + show a few cpp failures
-    python diagnose_failures.py java       # show java failures
-    python diagnose_failures.py cpp 8      # show 8 cpp failure examples
-"""
 import json, sys
 from collections import Counter, defaultdict
 

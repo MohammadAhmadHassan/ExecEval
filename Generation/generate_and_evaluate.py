@@ -1,28 +1,3 @@
-"""
-GENERATION PHASE: feed each problem to each model, in each language, N samples,
-run every generation through ExecEval, and record EVERYTHING.
-
-Design:
-  - reads the merged master file (problem_statement + unit_tests + solutions)
-  - for each task x language x model x sample:
-      * prompt the model to solve the problem in that language
-      * capture the raw response, extracted code, token usage, timing
-      * run the extracted code through ExecEval against the task's unit_tests
-      * record per-test outcomes + an aggregate verdict
-  - one JSONL line per generation (fully detailed) -> crash-safe & resumable
-  - a compact CSV summary is built at the end for quick analysis
-
-Setup:
-    pip install openai anthropic python-dotenv requests
-    .env with OPENAI_API_KEY and ANTHROPIC_API_KEY
-    ExecEval running at http://127.0.0.1:5000
-
-Run a pilot first:
-    python generate_and_evaluate.py <master.json> --limit 5
-Full:
-    python generate_and_evaluate.py <master.json>
-"""
-
 import os, sys, json, csv, argparse, time
 from collections import Counter
 import requests

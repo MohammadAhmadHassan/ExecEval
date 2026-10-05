@@ -1,23 +1,3 @@
-"""
-Translation consortium + execution gate  (v2)
-
-Changes in v2:
-  - Tuned, language-specific prompts (C++ gets explicit headers / I/O guidance)
-  - Retry-with-backoff on every API call (handles transient 503 / rate limits)
-  - Captures FAILED candidate code + compiler/runtime error text for diagnosis
-  - Gemini is OPTIONAL: set USE_GEMINI=False (or it auto-skips after repeated
-    hard failures) so a flaky third provider never blocks the run
-  - Tier switch (FAST vs TOP) in the MODELS block
-
-Setup:
-    pip install openai anthropic google-genai python-dotenv requests
-    .env with keys (see .env.example)
-    ExecEval running at http://127.0.0.1:5000
-
-Pilot:  python translate_and_gate.py ..\\working_set.json --limit 24
-Full:   python translate_and_gate.py ..\\working_set.json
-"""
-
 import os, sys, json, csv, argparse, time
 import requests
 from dotenv import load_dotenv

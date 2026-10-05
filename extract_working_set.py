@@ -1,37 +1,3 @@
-"""
-Step 1: Extract the USABLE working set for cross-language translation.
-
-Reads:
-  - codehalu_manifest.csv   (from the full sweep; USABLE/UNUSABLE/NO_SOLUTION)
-  - the 8 CodeHalu JSON files (same folder)
-
-For every USABLE task it pulls, from the original JSON:
-  - the WINNING reference solution (the exact solution index the sweep
-    recorded as passing all tests) -- this is the verified ground truth
-  - the full list of test cases (input / expected output)
-  - category metadata
-
-Writes:
-  - working_set.json  : list of task objects, ready for translation
-  - working_set_summary.txt : human-readable counts
-
-Each working_set.json entry:
-  {
-    "task_id": ...,
-    "source_file": "...",
-    "halu_type": "...",
-    "main_category": "Mapping|Naming|Resource|Logic",
-    "python_solution": "<the winning reference solution source>",
-    "unittests": [ {"input": "...", "output": ["..."]}, ... ],
-    "n_testcases": N
-  }
-
-Usage:
-    python extract_working_set.py <folder-with-json-and-manifest>
-    # or:
-    python extract_working_set.py <folder> --manifest codehalu_manifest.csv
-"""
-
 import json, sys, os, csv, argparse
 
 # map subcategory file -> main category (from CodeHalu Table 1)

@@ -1,26 +1,3 @@
-"""
-CodeHalu -> ExecEval harness  (validation gate, try-all-solutions)
-
-For each task:
-  - try EACH reference solution in turn against ALL the task's test cases
-  - the task PASSES the gate if ANY solution passes every test case
-  - the task FAILS the gate only if NO solution passes
-A task that fails the gate is UNUSABLE (untrustworthy ground truth) and
-should be excluded from the study.
-
-Output:
-  - per-task: PASS (with the index of the solution that worked) or FAIL
-  - for FAIL tasks: the outcome of the *best-performing* solution attempt,
-    plus diagnostics, so you can see why the whole task is unusable
-  - a summary with the true usable-task rate
-
-Usage:
-    python codehalu_execeval_harness.py <codehalu.json>
-Options (edit constants below):
-    MAX_TASKS      : cap tasks for a quick check; set to None for the full file
-    MAX_SOLUTIONS  : cap solutions tried per task (25 can be slow); None = all
-"""
-
 import json, sys, requests
 
 EXECEVAL_URL  = "http://127.0.0.1:5000/api/execute_code"

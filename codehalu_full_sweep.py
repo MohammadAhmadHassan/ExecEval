@@ -1,29 +1,3 @@
-"""
-CodeHalu -> ExecEval  FULL SWEEP  (validation-gate manifest builder)
-
-Runs the validation gate over ALL CodeHalu files and writes a structured,
-crash-safe manifest of every task: USABLE / UNUSABLE, which solution won,
-the failure reason if unusable, the hallucination category, and test-case
-count.
-
-Design for a long job:
-  - incremental save: every task result is appended to the manifest CSV as
-    soon as it's computed, so a crash/close never loses completed work
-  - resume: on restart it skips tasks already in the manifest
-  - progress: prints running totals
-
-Outputs (next to this script):
-  - codehalu_manifest.csv   : one row per task (the important artifact)
-  - codehalu_manifest.log   : human-readable running log
-
-Usage:
-    python codehalu_full_sweep.py <folder-with-the-8-json-files>
-    # or pass individual files:
-    python codehalu_full_sweep.py file1.json file2.json ...
-
-Edit the constants below if needed.
-"""
-
 import json, sys, os, csv, glob, time
 import requests
 
