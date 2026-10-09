@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Hallucination Analysis Dashboard</title>
+<style>
+ body{font-family:system-ui,Arial,sans-serif;margin:24px;background:#f7f8fa;color:#222}
+ h1{margin:0 0 4px} .sub{color:#666;margin-bottom:20px}
+ .card{background:#fff;border:1px solid #e3e6ea;border-radius:10px;padding:16px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+ img{max-width:100%;height:auto}
+ table{border-collapse:collapse;width:100%;font-size:14px}
+ th,td{border:1px solid #e3e6ea;padding:6px 10px;text-align:right}
+ th:first-child,td:first-child{text-align:left}
+ th{background:#f0f2f5}
+ .kpi{display:inline-block;background:#fff;border:1px solid #e3e6ea;border-radius:10px;padding:12px 18px;margin:6px 10px 6px 0}
+ .kpi b{font-size:22px;display:block}
+</style></head><body>
+<h1>Cross-Language Hallucination Analysis</h1>
+<div class="sub">Generated from 1 file(s) &middot; 5994 total generations &middot; 2 models &middot; 3 languages</div>
+<div>
+ <div class="kpi"><b>5994</b>generations</div>
+ <div class="kpi"><b>2</b>models</div>
+ <div class="kpi"><b>3</b>languages</div>
+ <div class="kpi"><b>4</b>hallucination categories</div>
+</div>
+<div class="card"><h3>Per-model summary</h3><table><thead><tr><th>Model</th><th>Tier</th><th>N</th><th>Pass %</th><th>Halluc %</th><th>Wrong</th><th>Compile</th><th>Runtime</th><th>Runaway</th></tr></thead><tbody><tr><td>claude-haiku</td><td>mid</td><td>2997</td><td>49.6%</td><td>50.4%</td><td>652</td><td>23</td><td>40</td><td>0</td></tr><tr><td>gpt-5-mini</td><td>mid</td><td>2997</td><td>79.7%</td><td>20.3%</td><td>286</td><td>11</td><td>8</td><td>0</td></tr></tbody></table></div>
+<div class="card"><h3>Interception stage by language</h3><table><thead><tr><th>Language</th><th>N</th><th>Passed</th><th>Compile-stage</th><th>Runtime-stage</th><th>Semantic</th><th>Gen-failure</th></tr></thead><tbody><tr><td>cpp</td><td>1998</td><td>65.5%</td><td>0.7%</td><td>1.5%</td><td>16.2%</td><td>0.0%</td></tr><tr><td>java</td><td>1998</td><td>62.7%</td><td>1.1%</td><td>3.3%</td><td>16.6%</td><td>0.0%</td></tr><tr><td>python</td><td>1998</td><td>65.8%</td><td>0.0%</td><td>3.9%</td><td>14.2%</td><td>0.0%</td></tr></tbody></table>
+ <p style="color:#666;font-size:13px">Stage = where the failure surfaces: <b>compile</b> (before execution), <b>runtime</b> (during), <b>semantic</b> (runs but wrong output), <b>generation</b> (model failed to produce valid code).</p></div>
+<div class="card"><h3>Outcome distribution by model</h3><img src="charts/outcome_by_model.png"></div><div class="card"><h3>Interception stage by language (thesis core)</h3><img src="charts/stage_by_language.png"></div><div class="card"><h3>Interception stage by model</h3><img src="charts/stage_by_model.png"></div><div class="card"><h3>Pass rate by model & language</h3><img src="charts/passrate_by_model_lang.png"></div><div class="card"><h3>Stage by language, per category</h3><img src="charts/category_language_stage.png"></div>
+<div class="sub">Combined compact data: combined_generations.csv</div>
+</body></html>

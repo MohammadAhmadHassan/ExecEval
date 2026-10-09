@@ -25,23 +25,15 @@ RECOVERY_JSONL = "failed_translation_recovery.jsonl"
 RECOVERY_CSV = "failed_translation_recovery_manifest.csv"
 LOG_FILE = "recover_failed_translation.log"
 
-USE_GEMINI = True
+USE_GEMINI = False
 GEMINI_AUTO_DISABLE_AFTER = 8
 MAX_RETRIES = 3
 RETRY_BASE_SLEEP = 2.0
 
-# Same FAST tier used by the original translate_and_gate.py.
 MODELS = [
     ("openai",    "openai",    "gpt-5-mini"),
     ("anthropic", "anthropic", "claude-haiku-4-5"),
 ]
-
-# TOP tier if you intentionally decide to switch later:
-# MODELS = [
-#     ("openai",    "openai",    "gpt-5.2"),
-#     ("anthropic", "anthropic", "claude-sonnet-4-6"),
-#     ("gemini",    "gemini",    "gemini-3.6-pro"),
-# ]
 
 _gemini_fail_count = 0
 
@@ -78,20 +70,22 @@ def build_prompt(py_code, lang):
 
     if lang == "cpp":
         return (
-            "Translate the following Python program to C++.\n"
-            "Requirements:\n"
-            "- Read ALL input from standard input (std::cin), write results to standard output (std::cout).\n"
-            "- Preserve EXACT output format: same tokens, same spacing, same newlines, "
-            "same numeric formatting as the Python program. Do not print anything extra.\n"
-            "- Start with the necessary includes. It is safe to use:\n"
-            "    #include <bits/stdc++.h>\n    using namespace std;\n"
-            "- Put all logic in int main(). Return 0 at the end.\n"
-            "- If floating point output is needed, match Python's default formatting "
-            "(use printf/std::setprecision as appropriate to reproduce the same digits).\n"
-            "- Read input robustly (handle multiple numbers per line / multiple lines as the Python does).\n"
-            "- Output ONLY the C++ source code. No explanation, no markdown fences.\n\n"
-            f"Python program:\n{py_code}"
-        )
+        "Translate the following Python program to C++.\n"
+        "Requirements:\n"
+        "- Read ALL input from standard input (std::cin), write results to standard output (std::cout).\n"
+        "- Preserve EXACT output format: same tokens, same spacing, same newlines, "
+        "same numeric formatting as the Python program. Do not print anything extra.\n"
+        "- Start with the necessary includes. It is safe to use:\n"
+        "    #include <bits/stdc++.h>\n    using namespace std;\n"
+        "- Use only libraries available in the execution environment. "
+        "Boost libraries are NOT available, so do not use boost::multiprecision or other Boost headers.\n"
+        "- Put all logic in int main(). Return 0 at the end.\n"
+        "- If floating point output is needed, match Python's default formatting "
+        "(use printf/std::setprecision as appropriate to reproduce the same digits).\n"
+        "- Read input robustly (handle multiple numbers per line / multiple lines as the Python does).\n"
+        "- Output ONLY the C++ source code. No explanation, no markdown fences.\n\n"
+        f"Python program:\n{py_code}"
+    )
 
     raise ValueError(f"Unsupported retry language: {lang}")
 
@@ -160,7 +154,7 @@ def call_openai(model, prompt):
         r = client.chat.completions.create(
             model=model,
             messages=[{"role": "user", "content": prompt}],
-            max_completion_tokens=1500,
+            max_completion_tokens=6000,
         )
         return r.choices[0].message.content
 
@@ -177,7 +171,7 @@ def call_anthropic(model, prompt):
     def go():
         r = client.messages.create(
             model=model,
-            max_tokens=1500,
+            max_tokens=6000,
             messages=[{"role": "user", "content": prompt}],
         )
         return r.content[0].text
@@ -223,6 +217,17 @@ def translate(provider, model, py_code, lang):
 # ---------------------------------------------------------------------------
 
 def gate(source_code, lang, unit_tests):
+    """
+    Execute a candidate translation against all supplied tests.
+
+    ExecEval may legitimately return a single result for a global failure
+    such as COMPILATION_ERROR or an immediate RUNTIME_ERROR. In that case,
+    preserve the actual failure outcome even if fewer results than tests were
+    returned.
+
+    Only label RESULT_COUNT_MISMATCH when the returned results do not already
+    establish a failure (for example, 1 PASSED result returned for 57 tests).
+    """
     payload = {
         "language": EXEC_LANG[lang],
         "source_code": source_code,
@@ -242,16 +247,6 @@ def gate(source_code, lang, unit_tests):
     if not data:
         return False, "EMPTY", None, 0
 
-    # Do not accept a translation if ExecEval silently returned fewer
-    # test results than were supplied.
-    if len(data) != len(unit_tests):
-        return (
-            False,
-            "RESULT_COUNT_MISMATCH",
-            f"sent {len(unit_tests)} tests, received {len(data)} results",
-            len(data),
-        )
-
     fail = next(
         (
             tc
@@ -261,15 +256,27 @@ def gate(source_code, lang, unit_tests):
         None,
     )
 
-    if fail is None:
-        return True, None, None, len(data)
+    # A concrete failure takes precedence over count mismatch.
+    if fail is not None:
+        return (
+            False,
+            fail.get("exec_outcome"),
+            fail.get("result"),
+            len(data),
+        )
 
-    return (
-        False,
-        fail.get("exec_outcome"),
-        fail.get("result"),
-        len(data),
-    )
+    # All returned results passed, but ExecEval did not return one result
+    # for every supplied test. Do not accept this as a successful translation.
+    if len(data) != len(unit_tests):
+        return (
+            False,
+            "RESULT_COUNT_MISMATCH",
+            f"sent {len(unit_tests)} tests, received {len(data)} results; "
+            "all returned results were PASSED",
+            len(data),
+        )
+
+    return True, None, None, len(data)
 
 
 # ---------------------------------------------------------------------------
@@ -278,11 +285,11 @@ def gate(source_code, lang, unit_tests):
 
 def load_done(path):
     """
-    Resume key is (instance_id, lang).
+    Resume key is (instance_id, lang), but ONLY successful recovery results
+    are considered done.
 
-    A result already written to the recovery JSONL is considered completed,
-    whether it passed or failed, because that record already contains the
-    complete configured model-panel attempt for that pair.
+    This is intentional: a previous failed recovery attempt should be retried
+    when the script is run again, while an already recovered pair is skipped.
     """
     done = set()
 
@@ -293,12 +300,13 @@ def load_done(path):
         for line in f:
             try:
                 d = json.loads(line)
-                done.add(
-                    (
-                        str(d["instance_id"]),
-                        str(d["lang"]),
+                if d.get("passed") is True:
+                    done.add(
+                        (
+                            str(d["instance_id"]),
+                            str(d["lang"]),
+                        )
                     )
-                )
             except Exception:
                 pass
 
@@ -616,6 +624,18 @@ def main():
 
                     continue
 
+                # Empty model output should not be sent to ExecEval.
+                if not code or not code.strip():
+                    attempts.append({
+                        "model": label,
+                        "provider": provider,
+                        "model_id": model,
+                        "passed": False,
+                        "outcome": "EXTRACTION_ERROR",
+                        "error_text": "Model returned empty source code after extraction.",
+                    })
+                    continue
+
                 # ----- execution gate -----
                 try:
                     (
@@ -712,10 +732,10 @@ def main():
                 rec,
             )
 
-            done.add(key)
             completed_now += 1
 
             if winner:
+                done.add(key)
                 recovered_now += 1
                 log(
                     f"    RECOVERED by "

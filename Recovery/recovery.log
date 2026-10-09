@@ -1,0 +1,879 @@
+[21:14:41] Loaded 5 no_solution tasks | generators=['gpt-5-mini', 'claude-haiku'] | samples=3 | order=['cpp', 'java', 'python']
+[21:14:41] task 2963 (Resource, 2 tests): recovering ...
+[21:19:04] Loaded 5 no_solution tasks | generators=['luna', 'deepseek'] | samples=3 | order=['cpp', 'java', 'python']
+[21:19:04] task 2963 (Resource, 2 tests): recovering ...
+[21:19:39]   -> SKIP task 2963: no model solved cpp; abandoning (short-circuit)
+[21:19:39] task 3185 (Resource, 2 tests): recovering ...
+[21:20:31]     [cpp] PASS via luna (sample 0)
+[21:20:58]     [java] PASS via luna (sample 0)
+[21:21:59]     [python] PASS via luna (sample 0)
+[21:21:59]   -> GRADUATED task 3185 (cpp:luna java:luna python:luna)
+[21:21:59] task 3502 (Resource, 2 tests): recovering ...
+[21:26:10]   -> SKIP task 3502: no model solved cpp; abandoning (short-circuit)
+[21:26:10] task 2753 (Resource, 1 tests): recovering ...
+[21:26:24]     [cpp] PASS via luna (sample 0)
+[21:26:40]     [java] PASS via luna (sample 0)
+[21:27:01]     [python] PASS via luna (sample 0)
+[21:27:01]   -> GRADUATED task 2753 (cpp:luna java:luna python:luna)
+[21:27:01] task 2809 (Resource, 1 tests): recovering ...
+[21:28:54] Loaded 203 no_solution tasks | generators=['luna', 'deepseek'] | samples=3 | order=['cpp', 'java', 'python'] | resuming (4 already finalised)
+[21:28:54] task 2809 (Resource, 1 tests): recovering ...
+[21:30:54]     [cpp] PASS via luna (sample 1)
+[21:31:53]     [java] PASS via luna (sample 0)
+[21:32:25]     [python] PASS via luna (sample 0)
+[21:32:25]   -> GRADUATED task 2809 (cpp:luna java:luna python:luna)
+[21:32:25] task 3189 (Resource, 1 tests): recovering ...
+[21:32:34]     [cpp] PASS via luna (sample 0)
+[21:32:48]     [java] PASS via luna (sample 0)
+[21:32:57]     [python] PASS via luna (sample 0)
+[21:32:57]   -> GRADUATED task 3189 (cpp:luna java:luna python:luna)
+[21:32:57] task 3252 (Resource, 2 tests): recovering ...
+[21:33:13]     [cpp] PASS via luna (sample 0)
+[21:33:29]     [java] PASS via luna (sample 0)
+[21:34:07]     [python] PASS via luna (sample 0)
+[21:34:07]   -> GRADUATED task 3252 (cpp:luna java:luna python:luna)
+[21:34:07] task 3350 (Resource, 2 tests): recovering ...
+[21:36:00]     [cpp] PASS via luna (sample 1)
+[21:37:05]     [java] PASS via luna (sample 0)
+[21:38:03]     [python] PASS via luna (sample 0)
+[21:38:03]   -> GRADUATED task 3350 (cpp:luna java:luna python:luna)
+[21:38:03] task 3596 (Resource, 1 tests): recovering ...
+[21:38:09]     [cpp] PASS via luna (sample 0) (tolerance-rescued)
+[21:38:16]     [java] PASS via luna (sample 0) (tolerance-rescued)
+[21:38:21]     [python] PASS via luna (sample 0) (tolerance-rescued)
+[21:38:21]   -> GRADUATED task 3596 (cpp:luna java:luna python:luna)
+[21:38:21] task 4803 (Resource, 2 tests): recovering ...
+[21:38:37]     [cpp] PASS via deepseek (sample 0)
+[21:38:55]     [java] PASS via deepseek (sample 0)
+[21:39:12]     [python] PASS via deepseek (sample 0)
+[21:39:12]   -> GRADUATED task 4803 (cpp:deepseek java:deepseek python:deepseek)
+[21:39:12] task 4861 (Resource, 2 tests): recovering ...
+[21:39:54]   -> SKIP task 4861: no model solved cpp; abandoning (short-circuit)
+[21:39:54] task 3177 (Resource, 1 tests): recovering ...
+[21:41:17]     [cpp] PASS via luna (sample 1)
+[21:43:22]     [java] PASS via luna (sample 1)
+[21:46:30]     [python] PASS via luna (sample 2)
+[21:46:30]   -> GRADUATED task 3177 (cpp:luna java:luna python:luna)
+[21:46:30] task 3235 (Resource, 3 tests): recovering ...
+[21:47:18]   -> SKIP task 3235: no model solved cpp; abandoning (short-circuit)
+[21:47:18] task 3266 (Resource, 1 tests): recovering ...
+[21:47:35]     [cpp] PASS via luna (sample 0)
+[21:48:08]     [java] PASS via luna (sample 1)
+[21:49:01]     [python] PASS via deepseek (sample 2)
+[21:49:01]   -> GRADUATED task 3266 (cpp:luna java:luna python:deepseek)
+[21:49:01] task 3273 (Resource, 3 tests): recovering ...
+[21:49:12]     [cpp] PASS via luna (sample 0)
+[21:49:28]     [java] PASS via luna (sample 0)
+[21:49:40]     [python] PASS via luna (sample 0)
+[21:49:40]   -> GRADUATED task 3273 (cpp:luna java:luna python:luna)
+[21:49:40] task 3433 (Resource, 2 tests): recovering ...
+[21:49:51]     [cpp] PASS via luna (sample 0)
+[21:50:06]     [java] PASS via luna (sample 0)
+[21:50:30]     [python] PASS via luna (sample 0)
+[21:50:30]   -> GRADUATED task 3433 (cpp:luna java:luna python:luna)
+[21:50:30] task 3647 (Resource, 1 tests): recovering ...
+[21:51:09]     [cpp] PASS via luna (sample 0)
+[21:51:41]     [java] PASS via luna (sample 0)
+[21:52:16]     [python] PASS via luna (sample 0)
+[21:52:16]   -> GRADUATED task 3647 (cpp:luna java:luna python:luna)
+[21:52:16] task 2921 (Mapping, 2 tests): recovering ...
+[21:52:46]     [cpp] PASS via luna (sample 0)
+[21:53:19]     [java] PASS via luna (sample 0)
+[21:53:54]     [python] PASS via luna (sample 0)
+[21:53:54]   -> GRADUATED task 2921 (cpp:luna java:luna python:luna)
+[21:53:54] task 3183 (Mapping, 2 tests): recovering ...
+[21:54:41]     [cpp] PASS via luna (sample 0)
+[21:55:03]     [java] PASS via luna (sample 0)
+[21:55:11]     [python] PASS via luna (sample 0)
+[21:55:11]   -> GRADUATED task 3183 (cpp:luna java:luna python:luna)
+[21:55:11] task 2793 (Mapping, 2 tests): recovering ...
+[21:55:58]   -> SKIP task 2793: no model solved cpp; abandoning (short-circuit)
+[21:55:58] task 3004 (Mapping, 1 tests): recovering ...
+[21:56:44]     [cpp] PASS via luna (sample 0)
+[21:57:34]     [java] PASS via luna (sample 0)
+[21:59:35]     [python] PASS via luna (sample 1)
+[21:59:35]   -> GRADUATED task 3004 (cpp:luna java:luna python:luna)
+[21:59:35] task 3334 (Mapping, 2 tests): recovering ...
+[22:03:13]   -> SKIP task 3334: no model solved cpp; abandoning (short-circuit)
+[22:03:13] task 3370 (Mapping, 2 tests): recovering ...
+[22:03:48]     [cpp] PASS via luna (sample 0)
+[22:04:24]     [java] PASS via luna (sample 0)
+[22:05:00]     [python] PASS via luna (sample 0)
+[22:05:00]   -> GRADUATED task 3370 (cpp:luna java:luna python:luna)
+[22:05:00] task 3378 (Mapping, 2 tests): recovering ...
+[22:09:16]   -> SKIP task 3378: no model solved cpp; abandoning (short-circuit)
+[22:09:16] task 3428 (Mapping, 2 tests): recovering ...
+[22:09:42]     [cpp] PASS via luna (sample 0)
+[22:10:26]     [java] PASS via luna (sample 0)
+[22:10:40]     [python] PASS via luna (sample 0)
+[22:10:40]   -> GRADUATED task 3428 (cpp:luna java:luna python:luna)
+[22:10:40] task 3444 (Mapping, 2 tests): recovering ...
+[22:10:59]     [cpp] PASS via luna (sample 0)
+[22:11:24]     [java] PASS via luna (sample 0)
+[22:11:46]     [python] PASS via luna (sample 0)
+[22:11:46]   -> GRADUATED task 3444 (cpp:luna java:luna python:luna)
+[22:11:46] task 3568 (Mapping, 1 tests): recovering ...
+[22:12:45]     [cpp] PASS via luna (sample 0)
+[22:14:31]     [java] PASS via luna (sample 1)
+[22:16:29]     [python] PASS via luna (sample 1)
+[22:16:29]   -> GRADUATED task 3568 (cpp:luna java:luna python:luna)
+[22:16:29] task 4852 (Mapping, 3 tests): recovering ...
+[22:16:41]     [cpp] PASS via luna (sample 0)
+[22:16:55]     [java] PASS via luna (sample 0)
+[22:17:01]     [python] PASS via luna (sample 0)
+[22:17:01]   -> GRADUATED task 4852 (cpp:luna java:luna python:luna)
+[22:17:01] task 4992 (Mapping, 1 tests): recovering ...
+[22:18:25]   -> SKIP task 4992: no model solved cpp; abandoning (short-circuit)
+[22:18:25] task 4842 (Mapping, 3 tests): recovering ...
+[22:18:34]     [cpp] PASS via luna (sample 0)
+[22:18:50]     [java] PASS via luna (sample 0)
+[22:18:55]     [python] PASS via luna (sample 0)
+[22:18:55]   -> GRADUATED task 4842 (cpp:luna java:luna python:luna)
+[22:18:55] task 3498 (Mapping, 2 tests): recovering ...
+[22:20:17]     [cpp] PASS via luna (sample 1)
+[22:23:30]     [java] PASS via deepseek (sample 1)
+[22:24:25]     [python] PASS via luna (sample 0)
+[22:24:25]   -> GRADUATED task 3498 (cpp:luna java:deepseek python:luna)
+[22:24:25] task 4939 (Mapping, 2 tests): recovering ...
+[22:24:30]     [cpp] PASS via luna (sample 0)
+[22:24:36]     [java] PASS via luna (sample 0)
+[22:24:44]     [python] PASS via luna (sample 1)
+[22:24:44]   -> GRADUATED task 4939 (cpp:luna java:luna python:luna)
+[22:24:44] task 2729 (Mapping, 4 tests): recovering ...
+[22:24:53]     [cpp] PASS via luna (sample 0)
+[22:25:09]     [java] PASS via luna (sample 0)
+[22:25:16]     [python] PASS via luna (sample 0)
+[22:25:16]   -> GRADUATED task 2729 (cpp:luna java:luna python:luna)
+[22:25:16] task 3091 (Mapping, 3 tests): recovering ...
+[22:25:56]     [cpp] PASS via luna (sample 0)
+[22:26:21]     [java] PASS via luna (sample 0)
+[22:28:28]     [python] PASS via luna (sample 1)
+[22:28:28]   -> GRADUATED task 3091 (cpp:luna java:luna python:luna)
+[22:28:28] task 3354 (Mapping, 2 tests): recovering ...
+[22:29:04]     [cpp] PASS via luna (sample 0)
+[22:29:31]     [java] PASS via luna (sample 0)
+[22:30:06]     [python] PASS via luna (sample 0)
+[22:30:06]   -> GRADUATED task 3354 (cpp:luna java:luna python:luna)
+[22:30:06] task 3560 (Mapping, 2 tests): recovering ...
+[22:33:53]   -> SKIP task 3560: no model solved cpp; abandoning (short-circuit)
+[22:33:53] task 2876 (Mapping, 1 tests): recovering ...
+[22:33:59]     [cpp] PASS via luna (sample 0) (tolerance-rescued)
+[22:34:06]     [java] PASS via luna (sample 0) (tolerance-rescued)
+[22:34:09]     [python] PASS via luna (sample 0) (tolerance-rescued)
+[22:34:09]   -> GRADUATED task 2876 (cpp:luna java:luna python:luna)
+[22:34:09] task 2904 (Mapping, 2 tests): recovering ...
+[22:34:43]     [cpp] PASS via luna (sample 0)
+[22:35:20]     [java] PASS via luna (sample 0)
+[22:35:56]     [python] PASS via luna (sample 0)
+[22:35:56]   -> GRADUATED task 2904 (cpp:luna java:luna python:luna)
+[22:35:56] task 2916 (Mapping, 2 tests): recovering ...
+[22:36:04]     [cpp] PASS via luna (sample 0)
+[22:36:14]     [java] PASS via luna (sample 0)
+[22:36:27]     [python] PASS via luna (sample 0)
+[22:36:27]   -> GRADUATED task 2916 (cpp:luna java:luna python:luna)
+[22:36:27] task 2941 (Mapping, 2 tests): recovering ...
+[22:36:36]     [cpp] PASS via luna (sample 0)
+[22:36:45]     [java] PASS via luna (sample 0)
+[22:36:55]     [python] PASS via luna (sample 0)
+[22:36:55]   -> GRADUATED task 2941 (cpp:luna java:luna python:luna)
+[22:36:55] task 2954 (Mapping, 2 tests): recovering ...
+[22:37:08]     [cpp] PASS via luna (sample 0)
+[22:37:32]     [java] PASS via luna (sample 0)
+[22:37:45]     [python] PASS via luna (sample 0)
+[22:37:45]   -> GRADUATED task 2954 (cpp:luna java:luna python:luna)
+[22:37:45] task 2990 (Mapping, 1 tests): recovering ...
+[22:37:54]     [cpp] PASS via luna (sample 0)
+[22:38:07]     [java] PASS via luna (sample 0)
+[22:38:15]     [python] PASS via luna (sample 0)
+[22:38:15]   -> GRADUATED task 2990 (cpp:luna java:luna python:luna)
+[22:38:15] task 3171 (Mapping, 2 tests): recovering ...
+[22:38:41]     [cpp] PASS via luna (sample 0)
+[22:39:24]     [java] PASS via luna (sample 0)
+[22:39:52]     [python] PASS via luna (sample 0)
+[22:39:52]   -> GRADUATED task 3171 (cpp:luna java:luna python:luna)
+[22:39:52] task 3175 (Mapping, 3 tests): recovering ...
+[22:43:57]   -> SKIP task 3175: no model solved cpp; abandoning (short-circuit)
+[22:43:57] task 3376 (Mapping, 2 tests): recovering ...
+[22:49:12]   -> SKIP task 3376: no model solved cpp; abandoning (short-circuit)
+[22:49:12] task 4733 (Mapping, 4 tests): recovering ...
+[22:49:22]     [cpp] PASS via luna (sample 0)
+[22:49:35]     [java] PASS via luna (sample 0)
+[22:49:46]     [python] PASS via luna (sample 0)
+[22:49:46]   -> GRADUATED task 4733 (cpp:luna java:luna python:luna)
+[22:49:46] task 4853 (Mapping, 3 tests): recovering ...
+[22:49:53]     [cpp] PASS via luna (sample 0)
+[22:50:05]     [java] PASS via luna (sample 1)
+[22:50:12]     [python] PASS via luna (sample 0)
+[22:50:12]   -> GRADUATED task 4853 (cpp:luna java:luna python:luna)
+[22:50:12] task 2825 (Mapping, 3 tests): recovering ...
+[22:50:23]     [cpp] PASS via luna (sample 0)
+[22:50:37]     [java] PASS via luna (sample 0)
+[22:50:57]     [python] PASS via luna (sample 0)
+[22:50:57]   -> GRADUATED task 2825 (cpp:luna java:luna python:luna)
+[22:50:57] task 2905 (Mapping, 2 tests): recovering ...
+[22:51:05]     [cpp] PASS via luna (sample 0)
+[22:51:15]     [java] PASS via luna (sample 0)
+[22:51:23]     [python] PASS via luna (sample 0)
+[22:51:23]   -> GRADUATED task 2905 (cpp:luna java:luna python:luna)
+[22:51:23] task 2980 (Mapping, 2 tests): recovering ...
+[22:51:30]     [cpp] PASS via luna (sample 0)
+[22:51:47]     [java] PASS via luna (sample 1)
+[22:51:53]     [python] PASS via luna (sample 0)
+[22:51:53]   -> GRADUATED task 2980 (cpp:luna java:luna python:luna)
+[22:51:53] task 3016 (Mapping, 5 tests): recovering ...
+[22:52:30]     [cpp] PASS via luna (sample 0)
+[22:53:09]     [java] PASS via luna (sample 0)
+[22:53:56]     [python] PASS via luna (sample 0)
+[22:53:56]   -> GRADUATED task 3016 (cpp:luna java:luna python:luna)
+[22:53:56] task 3426 (Mapping, 2 tests): recovering ...
+[22:54:23]     [cpp] PASS via luna (sample 0)
+[22:54:59]     [java] PASS via luna (sample 0)
+[22:55:26]     [python] PASS via luna (sample 0)
+[22:55:27]   -> GRADUATED task 3426 (cpp:luna java:luna python:luna)
+[22:55:27] task 3546 (Mapping, 2 tests): recovering ...
+[22:55:54]     [cpp] PASS via luna (sample 0)
+[22:56:38]     [java] PASS via luna (sample 0)
+[22:59:41]     [python] PASS via luna (sample 2)
+[22:59:41]   -> GRADUATED task 3546 (cpp:luna java:luna python:luna)
+[22:59:41] task 3563 (Mapping, 2 tests): recovering ...
+[23:02:37]     [cpp] PASS via deepseek (sample 0)
+[23:04:38]     [java] PASS via luna (sample 1)
+[23:08:14]   -> SKIP task 3563: no model solved python; abandoning (short-circuit)
+[23:08:14] task 3580 (Mapping, 2 tests): recovering ...
+[23:09:23]     [cpp] PASS via luna (sample 1)
+[23:10:12]     [java] PASS via luna (sample 0)
+[23:11:06]     [python] PASS via luna (sample 0)
+[23:11:06]   -> GRADUATED task 3580 (cpp:luna java:luna python:luna)
+[23:11:06] task 3627 (Mapping, 2 tests): recovering ...
+[23:11:28]     [cpp] PASS via luna (sample 0)
+[23:14:56]   -> SKIP task 3627: no model solved java; abandoning (short-circuit)
+[23:14:56] task 4985 (Mapping, 2 tests): recovering ...
+[23:15:01]     [cpp] PASS via luna (sample 0)
+[23:15:07]     [java] PASS via luna (sample 0)
+[23:15:09]     [python] PASS via luna (sample 0)
+[23:15:09]   -> GRADUATED task 4985 (cpp:luna java:luna python:luna)
+[23:15:09] task 2733 (Mapping, 1 tests): recovering ...
+[23:15:35]     [cpp] PASS via luna (sample 0) (tolerance-rescued)
+[23:15:57]     [java] PASS via luna (sample 0) (tolerance-rescued)
+[23:16:14]     [python] PASS via luna (sample 0) (tolerance-rescued)
+[23:16:14]   -> GRADUATED task 2733 (cpp:luna java:luna python:luna)
+[23:16:14] task 3474 (Mapping, 1 tests): recovering ...
+[23:17:24]     [cpp] PASS via luna (sample 0)
+[23:18:24]     [java] PASS via luna (sample 0)
+[23:19:27]     [python] PASS via luna (sample 0)
+[23:19:27]   -> GRADUATED task 3474 (cpp:luna java:luna python:luna)
+[23:19:27] task 3483 (Mapping, 1 tests): recovering ...
+[23:19:52]     [cpp] PASS via luna (sample 0) (tolerance-rescued)
+[23:20:21]     [java] PASS via luna (sample 0) (tolerance-rescued)
+[23:20:59]     [python] PASS via luna (sample 0) (tolerance-rescued)
+[23:20:59]   -> GRADUATED task 3483 (cpp:luna java:luna python:luna)
+[23:20:59] task 3573 (Mapping, 1 tests): recovering ...
+[23:21:19]     [cpp] PASS via luna (sample 0)
+[23:21:42]     [java] PASS via luna (sample 0)
+[23:21:59]     [python] PASS via luna (sample 0)
+[23:21:59]   -> GRADUATED task 3573 (cpp:luna java:luna python:luna)
+[23:21:59] task 4761 (Mapping, 1 tests): recovering ...
+[23:22:03]     [cpp] PASS via luna (sample 0)
+[23:22:07]     [java] PASS via luna (sample 0)
+[23:22:09]     [python] PASS via luna (sample 0)
+[23:22:09]   -> GRADUATED task 4761 (cpp:luna java:luna python:luna)
+[23:22:09] task 2780 (Mapping, 1 tests): recovering ...
+[23:22:54]     [cpp] PASS via luna (sample 0)
+[23:24:42]     [java] PASS via luna (sample 1)
+[23:25:28]     [python] PASS via luna (sample 0)
+[23:25:28]   -> GRADUATED task 2780 (cpp:luna java:luna python:luna)
+[23:25:28] task 3118 (Mapping, 1 tests): recovering ...
+[23:26:03]     [cpp] PASS via luna (sample 0)
+[23:26:46]     [java] PASS via luna (sample 0)
+[23:27:11]     [python] PASS via luna (sample 0)
+[23:27:11]   -> GRADUATED task 3118 (cpp:luna java:luna python:luna)
+[23:27:11] task 3387 (Mapping, 1 tests): recovering ...
+[23:27:27]     [cpp] PASS via luna (sample 0) (tolerance-rescued)
+[23:27:46]     [java] PASS via luna (sample 0) (tolerance-rescued)
+[23:27:52]     [python] PASS via luna (sample 0) (tolerance-rescued)
+[23:27:52]   -> GRADUATED task 3387 (cpp:luna java:luna python:luna)
+[23:27:52] task 4948 (Mapping, 1 tests): recovering ...
+[23:28:13]     [cpp] PASS via luna (sample 0)
+[23:28:32]     [java] PASS via luna (sample 0)
+[23:29:06]     [python] PASS via luna (sample 0)
+[23:29:06]   -> GRADUATED task 4948 (cpp:luna java:luna python:luna)
+[23:29:06] task 3201 (Naming, 3 tests): recovering ...
+[23:33:16]   -> SKIP task 3201: no model solved cpp; abandoning (short-circuit)
+[23:33:16] task 3423 (Naming, 2 tests): recovering ...
+[23:33:25]     [cpp] PASS via luna (sample 0)
+[23:33:38]     [java] PASS via luna (sample 0)
+[23:33:44]     [python] PASS via luna (sample 0)
+[23:33:44]   -> GRADUATED task 3423 (cpp:luna java:luna python:luna)
+[23:33:44] task 3531 (Naming, 2 tests): recovering ...
+[23:34:39]     [cpp] PASS via luna (sample 0)
+[23:36:37]     [java] PASS via luna (sample 1)
+[23:37:38]     [python] PASS via luna (sample 0)
+[23:37:38]   -> GRADUATED task 3531 (cpp:luna java:luna python:luna)
+[23:37:38] task 3549 (Naming, 2 tests): recovering ...
+[23:38:16]     [cpp] PASS via luna (sample 0)
+[23:38:49]     [java] PASS via luna (sample 0)
+[23:39:36]     [python] PASS via luna (sample 0)
+[23:39:36]   -> GRADUATED task 3549 (cpp:luna java:luna python:luna)
+[23:39:36] task 3666 (Naming, 2 tests): recovering ...
+[23:42:13]   -> SKIP task 3666: no model solved cpp; abandoning (short-circuit)
+[23:42:13] task 2803 (Naming, 3 tests): recovering ...
+[23:42:23]     [cpp] PASS via luna (sample 0)
+[23:43:26]     [java] PASS via luna (sample 1)
+[23:43:34]     [python] PASS via luna (sample 0)
+[23:43:34]   -> GRADUATED task 2803 (cpp:luna java:luna python:luna)
+[23:43:34] task 2897 (Naming, 2 tests): recovering ...
+[23:43:40]     [cpp] PASS via luna (sample 0)
+[23:43:48]     [java] PASS via luna (sample 0)
+[23:44:03]     [python] PASS via luna (sample 0)
+[23:44:03]   -> GRADUATED task 2897 (cpp:luna java:luna python:luna)
+[23:44:03] task 2959 (Naming, 2 tests): recovering ...
+[23:44:16]     [cpp] PASS via luna (sample 0)
+[23:44:26]     [java] PASS via luna (sample 0)
+[23:44:37]     [python] PASS via luna (sample 0)
+[23:44:37]   -> GRADUATED task 2959 (cpp:luna java:luna python:luna)
+[23:44:37] task 3465 (Naming, 2 tests): recovering ...
+[23:45:40]   -> SKIP task 3465: no model solved cpp; abandoning (short-circuit)
+[23:45:40] task 3598 (Naming, 2 tests): recovering ...
+[23:45:57]     [cpp] PASS via luna (sample 0)
+[23:46:40]     [java] PASS via luna (sample 0)
+[23:47:13]     [python] PASS via luna (sample 1)
+[23:47:13]   -> GRADUATED task 3598 (cpp:luna java:luna python:luna)
+[23:47:13] task 4891 (Naming, 2 tests): recovering ...
+[23:47:16]     [cpp] PASS via luna (sample 0)
+[23:47:19]     [java] PASS via luna (sample 0)
+[23:47:21]     [python] PASS via luna (sample 0)
+[23:47:21]   -> GRADUATED task 4891 (cpp:luna java:luna python:luna)
+[23:47:21] task 4894 (Naming, 2 tests): recovering ...
+[23:47:34]     [cpp] PASS via luna (sample 0)
+[23:47:48]     [java] PASS via luna (sample 0)
+[23:48:05]     [python] PASS via luna (sample 0)
+[23:48:05]   -> GRADUATED task 4894 (cpp:luna java:luna python:luna)
+[23:48:05] task 4933 (Naming, 2 tests): recovering ...
+[23:48:16]     [cpp] PASS via luna (sample 0)
+[23:48:22]     [java] PASS via luna (sample 0)
+[23:48:35]     [python] PASS via luna (sample 1)
+[23:48:35]   -> GRADUATED task 4933 (cpp:luna java:luna python:luna)
+[23:48:35] task 3170 (Naming, 3 tests): recovering ...
+[23:49:50]     [cpp] PASS via luna (sample 1)
+[23:50:24]     [java] PASS via luna (sample 0)
+[23:50:59]     [python] PASS via luna (sample 0)
+[23:50:59]   -> GRADUATED task 3170 (cpp:luna java:luna python:luna)
+[23:50:59] task 3339 (Naming, 2 tests): recovering ...
+[23:51:06]     [cpp] PASS via luna (sample 0)
+[23:51:13]     [java] PASS via luna (sample 0)
+[23:51:19]     [python] PASS via luna (sample 0)
+[23:51:19]   -> GRADUATED task 3339 (cpp:luna java:luna python:luna)
+[23:51:19] task 2811 (Naming, 3 tests): recovering ...
+[23:54:05]     [cpp] PASS via deepseek (sample 0)
+[23:57:37]     [java] PASS via deepseek (sample 0)
+[23:58:20]     [python] PASS via luna (sample 0)
+[23:58:20]   -> GRADUATED task 2811 (cpp:deepseek java:deepseek python:luna)
+[23:58:20] task 2813 (Naming, 3 tests): recovering ...
+[23:58:30]     [cpp] PASS via luna (sample 0)
+[23:59:21]   -> SKIP task 2813: no model solved java; abandoning (short-circuit)
+[23:59:21] task 2901 (Naming, 2 tests): recovering ...
+[23:59:45]     [cpp] PASS via luna (sample 0)
+[00:00:14]     [java] PASS via luna (sample 0)
+[00:01:37]     [python] PASS via luna (sample 1)
+[00:01:37]   -> GRADUATED task 2901 (cpp:luna java:luna python:luna)
+[00:01:37] task 2948 (Naming, 2 tests): recovering ...
+[00:02:48]   -> SKIP task 2948: no model solved cpp; abandoning (short-circuit)
+[00:02:48] task 2965 (Naming, 2 tests): recovering ...
+[00:03:15]     [cpp] PASS via luna (sample 0)
+[00:03:44]     [java] PASS via luna (sample 0)
+[00:04:04]     [python] PASS via luna (sample 0)
+[00:04:04]   -> GRADUATED task 2965 (cpp:luna java:luna python:luna)
+[00:04:04] task 3013 (Naming, 5 tests): recovering ...
+[00:08:00]   -> SKIP task 3013: no model solved cpp; abandoning (short-circuit)
+[00:08:00] task 3120 (Naming, 2 tests): recovering ...
+[00:11:41]     [cpp] PASS via deepseek (sample 0)
+[00:15:53]   -> SKIP task 3120: no model solved java; abandoning (short-circuit)
+[00:15:53] task 3268 (Naming, 4 tests): recovering ...
+[00:19:21]   -> SKIP task 3268: no model solved cpp; abandoning (short-circuit)
+[00:19:21] task 3353 (Naming, 1 tests): recovering ...
+[00:19:38]     [cpp] PASS via luna (sample 0)
+[00:19:59]     [java] PASS via luna (sample 0)
+[00:20:36]     [python] PASS via luna (sample 1)
+[00:20:36]   -> GRADUATED task 3353 (cpp:luna java:luna python:luna)
+[00:20:36] task 3367 (Naming, 2 tests): recovering ...
+[00:21:39]     [cpp] PASS via luna (sample 0) (tolerance-rescued)
+[00:24:34]     [java] PASS via luna (sample 2) (tolerance-rescued)
+[00:25:20]     [python] PASS via luna (sample 0) (tolerance-rescued)
+[00:25:20]   -> GRADUATED task 3367 (cpp:luna java:luna python:luna)
+[00:25:20] task 3397 (Naming, 2 tests): recovering ...
+[00:25:43]     [cpp] PASS via luna (sample 0)
+[00:26:13]     [java] PASS via luna (sample 0)
+[00:26:30]     [python] PASS via luna (sample 0)
+[00:26:30]   -> GRADUATED task 3397 (cpp:luna java:luna python:luna)
+[00:26:30] task 3480 (Naming, 2 tests): recovering ...
+[00:27:24]     [cpp] PASS via luna (sample 0)
+[00:28:07]     [java] PASS via luna (sample 0)
+[00:28:46]     [python] PASS via luna (sample 0)
+[00:28:46]   -> GRADUATED task 3480 (cpp:luna java:luna python:luna)
+[00:28:46] task 3556 (Naming, 2 tests): recovering ...
+[00:29:07]     [cpp] PASS via luna (sample 0)
+[00:29:47]     [java] PASS via luna (sample 1)
+[00:30:00]     [python] PASS via luna (sample 0)
+[00:30:00]   -> GRADUATED task 3556 (cpp:luna java:luna python:luna)
+[00:30:00] task 3570 (Naming, 2 tests): recovering ...
+[00:30:22]     [cpp] PASS via luna (sample 0)
+[00:31:10]     [java] PASS via luna (sample 1)
+[00:32:03]     [python] PASS via luna (sample 1)
+[00:32:03]   -> GRADUATED task 3570 (cpp:luna java:luna python:luna)
+[00:32:03] task 3596 (Naming, 2 tests): recovering ...
+[00:32:31]     [cpp] PASS via deepseek (sample 0)
+[00:32:57]     [java] PASS via luna (sample 1)
+[00:33:22]     [python] PASS via deepseek (sample 0)
+[00:33:22]   -> GRADUATED task 3596 (cpp:deepseek java:luna python:deepseek)
+[00:33:22] task 3620 (Naming, 2 tests): recovering ...
+[00:34:19]     [cpp] PASS via luna (sample 0)
+[00:35:09]     [java] PASS via luna (sample 0)
+[00:35:51]     [python] PASS via luna (sample 0)
+[00:35:51]   -> GRADUATED task 3620 (cpp:luna java:luna python:luna)
+[00:35:51] task 4813 (Naming, 3 tests): recovering ...
+[00:35:55]     [cpp] PASS via luna (sample 0)
+[00:36:01]     [java] PASS via luna (sample 0)
+[00:36:04]     [python] PASS via luna (sample 0)
+[00:36:04]   -> GRADUATED task 4813 (cpp:luna java:luna python:luna)
+[00:36:04] task 4866 (Naming, 2 tests): recovering ...
+[00:36:08]     [cpp] PASS via luna (sample 0)
+[00:36:11]     [java] PASS via luna (sample 0)
+[00:36:14]     [python] PASS via luna (sample 0)
+[00:36:14]   -> GRADUATED task 4866 (cpp:luna java:luna python:luna)
+[00:36:14] task 4941 (Naming, 2 tests): recovering ...
+[00:36:23]     [cpp] PASS via luna (sample 0)
+[00:36:38]     [java] PASS via luna (sample 0)
+[00:36:43]     [python] PASS via luna (sample 0)
+[00:36:43]   -> GRADUATED task 4941 (cpp:luna java:luna python:luna)
+[00:36:43] task 3469 (Naming, 2 tests): recovering ...
+[00:38:06]     [cpp] PASS via deepseek (sample 0)
+[00:38:40]     [java] PASS via luna (sample 0)
+[00:39:05]     [python] PASS via luna (sample 0)
+[00:39:05]   -> GRADUATED task 3469 (cpp:deepseek java:luna python:luna)
+[00:39:05] task 3168 (Naming, 3 tests): recovering ...
+[00:39:12]     [cpp] PASS via luna (sample 0)
+[00:39:23]     [java] PASS via luna (sample 0)
+[00:39:40]     [python] PASS via luna (sample 0)
+[00:39:40]   -> GRADUATED task 3168 (cpp:luna java:luna python:luna)
+[00:39:40] task 2767 (Naming, 3 tests): recovering ...
+[00:39:59]     [cpp] PASS via luna (sample 0)
+[00:40:14]     [java] PASS via luna (sample 0)
+[00:40:39]     [python] PASS via luna (sample 0)
+[00:40:39]   -> GRADUATED task 2767 (cpp:luna java:luna python:luna)
+[00:40:39] task 2843 (Naming, 3 tests): recovering ...
+[00:40:56]     [cpp] PASS via luna (sample 0)
+[00:41:19]     [java] PASS via luna (sample 0)
+[00:41:35]     [python] PASS via luna (sample 0)
+[00:41:35]   -> GRADUATED task 2843 (cpp:luna java:luna python:luna)
+[00:41:35] task 3031 (Naming, 4 tests): recovering ...
+[00:41:59]     [cpp] PASS via luna (sample 0)
+[00:42:22]     [java] PASS via luna (sample 0)
+[00:42:39]     [python] PASS via luna (sample 0)
+[00:42:39]   -> GRADUATED task 3031 (cpp:luna java:luna python:luna)
+[00:42:39] task 3080 (Naming, 3 tests): recovering ...
+[00:46:47]   -> SKIP task 3080: no model solved cpp; abandoning (short-circuit)
+[00:46:47] task 3112 (Naming, 3 tests): recovering ...
+[00:47:19]     [cpp] PASS via luna (sample 0)
+[00:47:57]     [java] PASS via luna (sample 0)
+[00:48:34]     [python] PASS via luna (sample 0)
+[00:48:34]   -> GRADUATED task 3112 (cpp:luna java:luna python:luna)
+[00:48:34] task 3497 (Naming, 2 tests): recovering ...
+[00:49:11]     [cpp] PASS via luna (sample 0)
+[00:49:58]     [java] PASS via luna (sample 0)
+[00:50:33]     [python] PASS via luna (sample 0)
+[00:50:33]   -> GRADUATED task 3497 (cpp:luna java:luna python:luna)
+[00:50:33] task 3642 (Naming, 2 tests): recovering ...
+[00:53:47]     [cpp] PASS via deepseek (sample 1)
+[00:57:59]     [java] PASS via deepseek (sample 0)
+[01:01:03]     [python] PASS via deepseek (sample 0)
+[01:01:03]   -> GRADUATED task 3642 (cpp:deepseek java:deepseek python:deepseek)
+[01:01:03] task 4861 (Naming, 2 tests): recovering ...
+[01:01:49]   -> SKIP task 4861: no model solved cpp; abandoning (short-circuit)
+[01:01:49] task 3559 (Logic, 2 tests): recovering ...
+[01:02:39]     [cpp] PASS via luna (sample 0)
+[01:03:26]     [java] PASS via luna (sample 0)
+[01:04:18]     [python] PASS via luna (sample 0)
+[01:04:18]   -> GRADUATED task 3559 (cpp:luna java:luna python:luna)
+[01:04:18] task 2758 (Logic, 3 tests): recovering ...
+[01:05:10]     [cpp] PASS via luna (sample 0)
+[01:07:28]     [java] PASS via deepseek (sample 1)
+[01:09:23]     [python] PASS via luna (sample 2)
+[01:09:23]   -> GRADUATED task 2758 (cpp:luna java:deepseek python:luna)
+[01:09:23] task 3039 (Logic, 4 tests): recovering ...
+[01:09:45]     [cpp] PASS via luna (sample 0)
+[01:10:36]     [java] PASS via luna (sample 1)
+[01:11:07]     [python] PASS via luna (sample 0)
+[01:11:07]   -> GRADUATED task 3039 (cpp:luna java:luna python:luna)
+[01:11:07] task 2723 (Logic, 4 tests): recovering ...
+[01:11:55]     [cpp] PASS via luna (sample 0)
+[01:12:41]     [java] PASS via luna (sample 0)
+[01:13:13]     [python] PASS via luna (sample 0)
+[01:13:13]   -> GRADUATED task 2723 (cpp:luna java:luna python:luna)
+[01:13:13] task 3487 (Logic, 2 tests): recovering ...
+[01:17:16]   -> SKIP task 3487: no model solved cpp; abandoning (short-circuit)
+[01:17:16] task 3158 (Logic, 3 tests): recovering ...
+[01:17:36]     [cpp] PASS via luna (sample 0)
+[01:17:55]     [java] PASS via luna (sample 0)
+[01:18:11]     [python] PASS via luna (sample 0)
+[01:18:11]   -> GRADUATED task 3158 (cpp:luna java:luna python:luna)
+[01:18:11] task 3545 (Logic, 2 tests): recovering ...
+[01:20:35]     [cpp] PASS via luna (sample 2)
+[01:22:11]     [java] PASS via luna (sample 1)
+[01:23:59]     [python] PASS via luna (sample 1)
+[01:23:59]   -> GRADUATED task 3545 (cpp:luna java:luna python:luna)
+[01:23:59] task 2752 (Logic, 3 tests): recovering ...
+[01:24:20]     [cpp] PASS via luna (sample 0)
+[01:24:48]     [java] PASS via luna (sample 0)
+[01:25:23]     [python] PASS via luna (sample 0)
+[01:25:23]   -> GRADUATED task 2752 (cpp:luna java:luna python:luna)
+[01:25:23] task 3515 (Logic, 2 tests): recovering ...
+[01:26:14]     [cpp] PASS via luna (sample 0)
+[01:27:43]     [java] PASS via luna (sample 1)
+[01:29:39]     [python] PASS via luna (sample 1)
+[01:29:39]   -> GRADUATED task 3515 (cpp:luna java:luna python:luna)
+[01:29:39] task 3032 (Logic, 4 tests): recovering ...
+[01:33:36]   -> SKIP task 3032: no model solved cpp; abandoning (short-circuit)
+[01:33:36] task 3143 (Logic, 3 tests): recovering ...
+[01:36:57]   -> SKIP task 3143: no model solved cpp; abandoning (short-circuit)
+[01:36:57] task 3258 (Logic, 3 tests): recovering ...
+[01:38:14]   -> SKIP task 3258: no model solved cpp; abandoning (short-circuit)
+[01:38:14] task 3639 (Logic, 2 tests): recovering ...
+[01:40:53]     [cpp] PASS via luna (sample 2)
+[01:43:40]   -> SKIP task 3639: no model solved java; abandoning (short-circuit)
+[01:43:40] task 3351 (Logic, 2 tests): recovering ...
+[01:44:17]     [cpp] PASS via luna (sample 0)
+[01:45:28]     [java] PASS via luna (sample 1)
+[01:46:29]     [python] PASS via luna (sample 1)
+[01:46:29]   -> GRADUATED task 3351 (cpp:luna java:luna python:luna)
+[01:46:29] task 3369 (Logic, 2 tests): recovering ...
+[01:47:19]     [cpp] PASS via luna (sample 0)
+[01:47:56]     [java] PASS via luna (sample 0)
+[01:48:34]     [python] PASS via luna (sample 0)
+[01:48:34]   -> GRADUATED task 3369 (cpp:luna java:luna python:luna)
+[01:48:34] task 3535 (Logic, 2 tests): recovering ...
+[01:48:55]     [cpp] PASS via luna (sample 0)
+[01:49:23]     [java] PASS via luna (sample 0)
+[01:49:41]     [python] PASS via luna (sample 0)
+[01:49:41]   -> GRADUATED task 3535 (cpp:luna java:luna python:luna)
+[01:49:41] task 3358 (Logic, 2 tests): recovering ...
+[01:52:42]   -> SKIP task 3358: no model solved cpp; abandoning (short-circuit)
+[01:52:42] task 2934 (Logic, 2 tests): recovering ...
+[01:53:17]     [cpp] PASS via luna (sample 0)
+[01:53:55]     [java] PASS via luna (sample 0)
+[01:54:46]     [python] PASS via luna (sample 0)
+[01:54:46]   -> GRADUATED task 2934 (cpp:luna java:luna python:luna)
+[01:54:46] task 3633 (Logic, 2 tests): recovering ...
+[01:58:31]   -> SKIP task 3633: no model solved cpp; abandoning (short-circuit)
+[01:58:31] task 3007 (Logic, 5 tests): recovering ...
+[02:02:16]   -> SKIP task 3007: no model solved cpp; abandoning (short-circuit)
+[02:02:16] task 3348 (Logic, 2 tests): recovering ...
+[02:05:18]   -> SKIP task 3348: no model solved cpp; abandoning (short-circuit)
+[02:05:18] task 2798 (Logic, 3 tests): recovering ...
+[02:05:43]     [cpp] PASS via luna (sample 0)
+[02:06:18]     [java] PASS via luna (sample 0)
+[02:06:53]     [python] PASS via luna (sample 0)
+[02:06:53]   -> GRADUATED task 2798 (cpp:luna java:luna python:luna)
+[02:06:53] task 3134 (Logic, 3 tests): recovering ...
+[02:07:41]     [cpp] PASS via luna (sample 0)
+[02:10:09]     [java] PASS via luna (sample 2)
+[02:10:50]     [python] PASS via luna (sample 0)
+[02:10:50]   -> GRADUATED task 3134 (cpp:luna java:luna python:luna)
+[02:10:50] task 3634 (Logic, 2 tests): recovering ...
+[02:11:18]     [cpp] PASS via luna (sample 0)
+[02:11:47]     [java] PASS via luna (sample 0)
+[02:12:10]     [python] PASS via luna (sample 0)
+[02:12:10]   -> GRADUATED task 3634 (cpp:luna java:luna python:luna)
+[02:12:10] task 4943 (Logic, 2 tests): recovering ...
+[02:12:16]     [cpp] PASS via luna (sample 0) (tolerance-rescued)
+[02:12:31]     [java] PASS via luna (sample 0) (tolerance-rescued)
+[02:12:45]     [python] PASS via luna (sample 1) (tolerance-rescued)
+[02:12:45]   -> GRADUATED task 4943 (cpp:luna java:luna python:luna)
+[02:12:45] task 2818 (Logic, 3 tests): recovering ...
+[02:12:51]     [cpp] PASS via luna (sample 0)
+[02:12:58]     [java] PASS via luna (sample 0)
+[02:13:04]     [python] PASS via luna (sample 0)
+[02:13:04]   -> GRADUATED task 2818 (cpp:luna java:luna python:luna)
+[02:13:04] task 3024 (Logic, 4 tests): recovering ...
+[02:13:23]     [cpp] PASS via luna (sample 0)
+[02:13:50]     [java] PASS via luna (sample 0)
+[02:14:13]     [python] PASS via luna (sample 0)
+[02:14:13]   -> GRADUATED task 3024 (cpp:luna java:luna python:luna)
+[02:14:13] task 4735 (Logic, 4 tests): recovering ...
+[02:14:20]     [cpp] PASS via luna (sample 0)
+[02:14:27]     [java] PASS via luna (sample 0)
+[02:14:33]     [python] PASS via luna (sample 0)
+[02:14:33]   -> GRADUATED task 4735 (cpp:luna java:luna python:luna)
+[02:14:33] task 4747 (Logic, 4 tests): recovering ...
+[02:14:38]     [cpp] PASS via luna (sample 0) (tolerance-rescued)
+[02:14:45]     [java] PASS via luna (sample 0)
+[02:14:49]     [python] PASS via luna (sample 0) (tolerance-rescued)
+[02:14:49]   -> GRADUATED task 4747 (cpp:luna java:luna python:luna)
+[02:14:49] task 4986 (Logic, 1 tests): recovering ...
+[02:15:31]   -> SKIP task 4986: no model solved cpp; abandoning (short-circuit)
+[02:15:31] task 2717 (Logic, 5 tests): recovering ...
+[02:15:40]     [cpp] PASS via luna (sample 0)
+[02:15:53]     [java] PASS via luna (sample 0)
+[02:16:06]     [python] PASS via luna (sample 0)
+[02:16:06]   -> GRADUATED task 2717 (cpp:luna java:luna python:luna)
+[02:16:06] task 2730 (Logic, 4 tests): recovering ...
+[02:18:10]   -> SKIP task 2730: no model solved cpp; abandoning (short-circuit)
+[02:18:10] task 2750 (Logic, 3 tests): recovering ...
+[02:18:16]     [cpp] PASS via luna (sample 0)
+[02:18:31]     [java] PASS via luna (sample 1)
+[02:18:35]     [python] PASS via luna (sample 0)
+[02:18:35]   -> GRADUATED task 2750 (cpp:luna java:luna python:luna)
+[02:18:35] task 2966 (Logic, 1 tests): recovering ...
+[02:18:44]     [cpp] PASS via luna (sample 0)
+[02:18:55]     [java] PASS via luna (sample 0)
+[02:19:04]     [python] PASS via luna (sample 0)
+[02:19:04]   -> GRADUATED task 2966 (cpp:luna java:luna python:luna)
+[02:19:04] task 2982 (Logic, 1 tests): recovering ...
+[02:19:11]     [cpp] PASS via luna (sample 0)
+[02:19:16]     [java] PASS via luna (sample 0)
+[02:19:20]     [python] PASS via luna (sample 0)
+[02:19:20]   -> GRADUATED task 2982 (cpp:luna java:luna python:luna)
+[02:19:20] task 3079 (Logic, 3 tests): recovering ...
+[02:20:01]     [cpp] PASS via luna (sample 0)
+[02:21:52]     [java] PASS via luna (sample 1)
+[02:25:38]   -> SKIP task 3079: no model solved python; abandoning (short-circuit)
+[02:25:38] task 3287 (Logic, 2 tests): recovering ...
+[02:28:58]   -> SKIP task 3287: no model solved cpp; abandoning (short-circuit)
+[02:28:58] task 3380 (Logic, 1 tests): recovering ...
+[02:29:14]     [cpp] PASS via luna (sample 0)
+[02:29:32]     [java] PASS via luna (sample 0)
+[02:29:55]     [python] PASS via luna (sample 0)
+[02:29:55]   -> GRADUATED task 3380 (cpp:luna java:luna python:luna)
+[02:29:55] task 3679 (Logic, 2 tests): recovering ...
+[02:30:29]     [cpp] PASS via luna (sample 0) (tolerance-rescued)
+[02:31:10]     [java] PASS via luna (sample 0) (tolerance-rescued)
+[02:31:39]     [python] PASS via luna (sample 0) (tolerance-rescued)
+[02:31:39]   -> GRADUATED task 3679 (cpp:luna java:luna python:luna)
+[02:31:39] task 4773 (Logic, 2 tests): recovering ...
+[02:31:52]     [cpp] PASS via luna (sample 0)
+[02:32:02]     [java] PASS via luna (sample 0)
+[02:32:14]     [python] PASS via luna (sample 0)
+[02:32:14]   -> GRADUATED task 4773 (cpp:luna java:luna python:luna)
+[02:32:14] task 4796 (Logic, 3 tests): recovering ...
+[02:32:17]     [cpp] PASS via luna (sample 0)
+[02:32:21]     [java] PASS via luna (sample 0)
+[02:32:24]     [python] PASS via luna (sample 0)
+[02:32:24]   -> GRADUATED task 4796 (cpp:luna java:luna python:luna)
+[02:32:24] task 4816 (Logic, 3 tests): recovering ...
+[02:32:27]     [cpp] PASS via luna (sample 0)
+[02:32:32]     [java] PASS via luna (sample 0)
+[02:32:35]     [python] PASS via luna (sample 0)
+[02:32:35]   -> GRADUATED task 4816 (cpp:luna java:luna python:luna)
+[02:32:35] task 4836 (Logic, 3 tests): recovering ...
+[02:32:42]     [cpp] PASS via luna (sample 0)
+[02:32:49]     [java] PASS via luna (sample 0)
+[02:32:55]     [python] PASS via luna (sample 0)
+[02:32:55]   -> GRADUATED task 4836 (cpp:luna java:luna python:luna)
+[02:32:55] task 3634 (Resource, 2 tests): recovering ...
+[02:33:24]     [cpp] PASS via luna (sample 0)
+[02:34:06]     [java] PASS via luna (sample 0)
+[02:34:34]     [python] PASS via luna (sample 0)
+[02:34:34]   -> GRADUATED task 3634 (cpp:luna java:luna python:luna)
+[02:34:34] task 4886 (Resource, 1 tests): recovering ...
+[02:35:06]     [cpp] PASS via deepseek (sample 0)
+[02:35:11]     [java] PASS via luna (sample 0)
+[02:35:15]     [python] PASS via luna (sample 0)
+[02:35:15]   -> GRADUATED task 4886 (cpp:deepseek java:luna python:luna)
+[02:35:15] task 2997 (Resource, 2 tests): recovering ...
+[02:35:41]     [cpp] PASS via luna (sample 0)
+[02:36:17]     [java] PASS via luna (sample 0)
+[02:36:47]     [python] PASS via luna (sample 0)
+[02:36:47]   -> GRADUATED task 2997 (cpp:luna java:luna python:luna)
+[02:36:47] task 3404 (Resource, 1 tests): recovering ...
+[02:41:07]   -> SKIP task 3404: no model solved cpp; abandoning (short-circuit)
+[02:41:07] task 3417 (Resource, 1 tests): recovering ...
+[02:41:28]     [cpp] PASS via luna (sample 0)
+[02:41:44]     [java] PASS via luna (sample 0)
+[02:42:11]     [python] PASS via luna (sample 1)
+[02:42:11]   -> GRADUATED task 3417 (cpp:luna java:luna python:luna)
+[02:42:11] task 3218 (Mapping, 3 tests): recovering ...
+[02:46:18]   -> SKIP task 3218: no model solved cpp; abandoning (short-circuit)
+[02:46:18] task 3361 (Mapping, 2 tests): recovering ...
+[02:49:14]     [cpp] PASS via luna (sample 2)
+[02:50:48]     [java] PASS via luna (sample 1)
+[02:53:32]     [python] PASS via luna (sample 2)
+[02:53:32]   -> GRADUATED task 3361 (cpp:luna java:luna python:luna)
+[02:53:32] task 3210 (Mapping, 3 tests): recovering ...
+[02:54:12]     [cpp] PASS via luna (sample 0)
+[02:56:04]     [java] PASS via luna (sample 1)
+[02:59:22]   -> SKIP task 3210: no model solved python; abandoning (short-circuit)
+[02:59:22] task 3225 (Mapping, 2 tests): recovering ...
+[02:59:48]     [cpp] PASS via luna (sample 0)
+[03:00:21]     [java] PASS via luna (sample 0)
+[03:00:42]     [python] PASS via luna (sample 0)
+[03:00:42]   -> GRADUATED task 3225 (cpp:luna java:luna python:luna)
+[03:00:42] task 3025 (Mapping, 4 tests): recovering ...
+[03:02:34]     [cpp] PASS via luna (sample 1)
+[03:05:22]     [java] PASS via deepseek (sample 0)
+[03:06:12]     [python] PASS via luna (sample 0)
+[03:06:12]   -> GRADUATED task 3025 (cpp:luna java:deepseek python:luna)
+[03:06:12] task 3482 (Mapping, 1 tests): recovering ...
+[03:06:35]     [cpp] PASS via luna (sample 0)
+[03:06:58]     [java] PASS via luna (sample 0)
+[03:07:35]     [python] PASS via luna (sample 0)
+[03:07:35]   -> GRADUATED task 3482 (cpp:luna java:luna python:luna)
+[03:07:35] task 3496 (Mapping, 2 tests): recovering ...
+[03:08:46]     [cpp] PASS via luna (sample 1)
+[03:11:10]   -> SKIP task 3496: no model solved java; abandoning (short-circuit)
+[03:11:10] task 4975 (Mapping, 1 tests): recovering ...
+[03:11:18]     [cpp] PASS via luna (sample 0)
+[03:11:36]     [java] PASS via luna (sample 1)
+[03:11:43]     [python] PASS via luna (sample 0)
+[03:11:43]   -> GRADUATED task 4975 (cpp:luna java:luna python:luna)
+[03:11:43] task 2760 (Mapping, 2 tests): recovering ...
+[03:11:48]     [cpp] PASS via luna (sample 0)
+[03:11:55]     [java] PASS via luna (sample 0)
+[03:12:02]     [python] PASS via luna (sample 0)
+[03:12:02]   -> GRADUATED task 2760 (cpp:luna java:luna python:luna)
+[03:12:02] task 2823 (Mapping, 1 tests): recovering ...
+[03:12:32]     [cpp] PASS via luna (sample 0)
+[03:13:25]     [java] PASS via luna (sample 2)
+[03:15:01]     [python] PASS via luna (sample 2)
+[03:15:01]   -> GRADUATED task 2823 (cpp:luna java:luna python:luna)
+[03:15:01] task 2996 (Mapping, 2 tests): recovering ...
+[03:15:32]     [cpp] PASS via luna (sample 0)
+[03:16:07]     [java] PASS via luna (sample 0)
+[03:16:50]     [python] PASS via luna (sample 0)
+[03:16:50]   -> GRADUATED task 2996 (cpp:luna java:luna python:luna)
+[03:16:50] task 3126 (Mapping, 1 tests): recovering ...
+[03:19:58]     [cpp] PASS via deepseek (sample 0)
+[03:23:18]   -> SKIP task 3126: no model solved java; abandoning (short-circuit)
+[03:23:18] task 3244 (Mapping, 3 tests): recovering ...
+[03:25:03]   -> SKIP task 3244: no model solved cpp; abandoning (short-circuit)
+[03:25:03] task 3337 (Mapping, 1 tests): recovering ...
+[03:25:13]     [cpp] PASS via luna (sample 0)
+[03:25:27]     [java] PASS via luna (sample 0)
+[03:25:49]     [python] PASS via luna (sample 0)
+[03:25:49]   -> GRADUATED task 3337 (cpp:luna java:luna python:luna)
+[03:25:49] task 3582 (Mapping, 2 tests): recovering ...
+[03:26:36]     [cpp] PASS via luna (sample 0)
+[03:27:07]     [java] PASS via luna (sample 0)
+[03:30:11]     [python] PASS via luna (sample 2)
+[03:30:11]   -> GRADUATED task 3582 (cpp:luna java:luna python:luna)
+[03:30:11] task 3608 (Mapping, 1 tests): recovering ...
+[03:30:26]     [cpp] PASS via luna (sample 0)
+[03:31:18]     [java] PASS via luna (sample 1)
+[03:31:50]     [python] PASS via luna (sample 1)
+[03:31:50]   -> GRADUATED task 3608 (cpp:luna java:luna python:luna)
+[03:31:50] task 4739 (Mapping, 1 tests): recovering ...
+[03:32:03]     [cpp] PASS via luna (sample 0)
+[03:32:23]     [java] PASS via luna (sample 0)
+[03:32:31]     [python] PASS via luna (sample 0)
+[03:32:31]   -> GRADUATED task 4739 (cpp:luna java:luna python:luna)
+[03:32:31] task 4963 (Mapping, 1 tests): recovering ...
+[03:32:39]     [cpp] PASS via luna (sample 0)
+[03:32:44]     [java] PASS via luna (sample 0)
+[03:32:48]     [python] PASS via luna (sample 0)
+[03:32:48]   -> GRADUATED task 4963 (cpp:luna java:luna python:luna)
+[03:32:48] task 2784 (Mapping, 2 tests): recovering ...
+[03:32:57]     [cpp] PASS via luna (sample 0)
+[03:33:06]     [java] PASS via luna (sample 0)
+[03:33:13]     [python] PASS via luna (sample 0)
+[03:33:13]   -> GRADUATED task 2784 (cpp:luna java:luna python:luna)
+[03:33:13] task 3281 (Mapping, 3 tests): recovering ...
+[03:35:37]   -> SKIP task 3281: no model solved cpp; abandoning (short-circuit)
+[03:35:37] task 3378 (Mapping, 2 tests): recovering ...
+[03:40:25]   -> SKIP task 3378: no model solved cpp; abandoning (short-circuit)
+[03:40:25] task 3565 (Mapping, 2 tests): recovering ...
+[03:40:50]     [cpp] PASS via luna (sample 0)
+[03:41:14]     [java] PASS via luna (sample 0)
+[03:41:40]     [python] PASS via luna (sample 0)
+[03:41:40]   -> GRADUATED task 3565 (cpp:luna java:luna python:luna)
+[03:41:40] task 4905 (Mapping, 2 tests): recovering ...
+[03:41:52]     [cpp] PASS via luna (sample 0)
+[03:42:23]     [java] PASS via luna (sample 1)
+[03:42:44]     [python] PASS via luna (sample 0)
+[03:42:44]   -> GRADUATED task 4905 (cpp:luna java:luna python:luna)
+[03:42:44] task 4953 (Mapping, 2 tests): recovering ...
+[03:43:08]     [cpp] PASS via luna (sample 0)
+[03:43:35]     [java] PASS via luna (sample 0)
+[03:43:51]     [python] PASS via luna (sample 0)
+[03:43:51]   -> GRADUATED task 4953 (cpp:luna java:luna python:luna)
+[03:43:51] task 2737 (Mapping, 2 tests): recovering ...
+[03:44:13]     [cpp] PASS via luna (sample 0)
+[03:44:46]     [java] PASS via luna (sample 0)
+[03:45:16]     [python] PASS via luna (sample 0)
+[03:45:16]   -> GRADUATED task 2737 (cpp:luna java:luna python:luna)
+[03:45:16] task 2758 (Mapping, 2 tests): recovering ...
+[03:45:51]     [cpp] PASS via luna (sample 0)
+[03:47:18]     [java] PASS via luna (sample 1)
+[03:47:59]     [python] PASS via luna (sample 0)
+[03:47:59]   -> GRADUATED task 2758 (cpp:luna java:luna python:luna)
+[03:47:59] task 2787 (Mapping, 3 tests): recovering ...
+[03:48:20]     [cpp] PASS via luna (sample 2)
+[03:49:01]   -> SKIP task 2787: no model solved java; abandoning (short-circuit)
+[03:49:01] task 2812 (Mapping, 2 tests): recovering ...
+[03:49:27]     [cpp] PASS via luna (sample 0)
+[03:49:57]     [java] PASS via luna (sample 0)
+[03:51:29]     [python] PASS via luna (sample 1)
+[03:51:29]   -> GRADUATED task 2812 (cpp:luna java:luna python:luna)
+[03:51:29] task 2864 (Mapping, 2 tests): recovering ...
+[03:54:15]   -> SKIP task 2864: no model solved cpp; abandoning (short-circuit)
+[03:54:15] task 3015 (Mapping, 4 tests): recovering ...
+[03:54:51]     [cpp] PASS via luna (sample 0)
+[03:55:29]     [java] PASS via luna (sample 0)
+[03:56:17]     [python] PASS via luna (sample 0)
+[03:56:17]   -> GRADUATED task 3015 (cpp:luna java:luna python:luna)
+[03:56:17] task 3049 (Mapping, 1 tests): recovering ...
+[03:56:52]     [cpp] PASS via luna (sample 0)
+[03:57:48]     [java] PASS via luna (sample 0)
+[03:58:07]     [python] PASS via luna (sample 0)
+[03:58:07]   -> GRADUATED task 3049 (cpp:luna java:luna python:luna)
+[03:58:07] task 3128 (Mapping, 2 tests): recovering ...
+[03:58:20]     [cpp] PASS via luna (sample 0)
+[03:58:35]     [java] PASS via luna (sample 0)
+[03:58:58]     [python] PASS via luna (sample 0)
+[03:58:58]   -> GRADUATED task 3128 (cpp:luna java:luna python:luna)
+[03:58:58] task 3163 (Mapping, 3 tests): recovering ...
+[04:02:43]   -> SKIP task 3163: no model solved cpp; abandoning (short-circuit)
+[04:02:43] task 3171 (Mapping, 1 tests): recovering ...
+[04:03:06]     [cpp] PASS via luna (sample 0)
+[04:03:28]     [java] PASS via luna (sample 0)
+[04:03:41]     [python] PASS via luna (sample 0)
+[04:03:41]   -> GRADUATED task 3171 (cpp:luna java:luna python:luna)
+[04:03:41] task 3208 (Mapping, 2 tests): recovering ...
+[04:04:20]     [cpp] PASS via luna (sample 0)
+[04:05:08]     [java] PASS via luna (sample 0)
+[04:05:43]     [python] PASS via luna (sample 0)
+[04:05:43]   -> GRADUATED task 3208 (cpp:luna java:luna python:luna)
+[04:05:43] task 3301 (Mapping, 3 tests): recovering ...
+[04:08:11]   -> SKIP task 3301: no model solved cpp; abandoning (short-circuit)
+[04:08:11] task 3356 (Mapping, 2 tests): recovering ...
+[04:11:21]   -> SKIP task 3356: no model solved cpp; abandoning (short-circuit)
+[04:11:21] task 3360 (Mapping, 1 tests): recovering ...
+[04:12:09]     [cpp] PASS via luna (sample 0)
+[04:13:49]     [java] PASS via luna (sample 1)
+[04:16:41]     [python] PASS via luna (sample 2)
+[04:16:41]   -> GRADUATED task 3360 (cpp:luna java:luna python:luna)
+[04:16:41] task 3427 (Mapping, 2 tests): recovering ...
+[04:16:52]     [cpp] PASS via luna (sample 0)
+[04:17:10]     [java] PASS via luna (sample 0)
+[04:17:21]     [python] PASS via luna (sample 0)
+[04:17:21]   -> GRADUATED task 3427 (cpp:luna java:luna python:luna)
+[04:17:21] task 3492 (Mapping, 2 tests): recovering ...
+[04:17:44]     [cpp] PASS via luna (sample 0)
+[04:18:31]     [java] PASS via luna (sample 0)
+[04:19:18]     [python] PASS via luna (sample 0)
+[04:19:18]   -> GRADUATED task 3492 (cpp:luna java:luna python:luna)
+[04:19:18] task 3501 (Mapping, 2 tests): recovering ...
+[04:19:43]     [cpp] PASS via luna (sample 0)
+[04:20:35]     [java] PASS via luna (sample 2)
+[04:21:21]     [python] PASS via luna (sample 0)
+[04:21:21]   -> GRADUATED task 3501 (cpp:luna java:luna python:luna)
+[04:21:21] task 3550 (Mapping, 2 tests): recovering ...
+[04:21:35]     [cpp] PASS via luna (sample 0)
+[04:22:23]     [java] PASS via luna (sample 0)
+[04:22:49]     [python] PASS via luna (sample 0)
+[04:22:49]   -> GRADUATED task 3550 (cpp:luna java:luna python:luna)
+[04:22:49] task 3607 (Mapping, 1 tests): recovering ...
+[04:23:05]     [cpp] PASS via luna (sample 0)
+[04:23:36]     [java] PASS via luna (sample 1)
+[04:23:46]     [python] PASS via luna (sample 0)
+[04:23:46]   -> GRADUATED task 3607 (cpp:luna java:luna python:luna)
+[04:23:46] task 3660 (Mapping, 1 tests): recovering ...
+[04:27:11]   -> SKIP task 3660: no model solved cpp; abandoning (short-circuit)
+[04:27:11] DONE. {'skipped_resume': 5, 'graduated': 150, 'skipped': 48} | graduated file: graduated_tasks.json (152 tasks) | manifest: recovery_manifest.csv

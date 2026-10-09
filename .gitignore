@@ -7,3 +7,4 @@ calculate_boundary_hallucination.json
 *.json
 *.csv
 *.jsonl
+*.png

@@ -1,0 +1,198 @@
+[01:50:31] Active models: ['openai', 'anthropic']
+[01:50:31] Loaded 5 recovery instances containing 5 failed translation pairs (limit=5)
+[01:50:31] [1/5] calculate_boundary_hallucination::3749 -> cpp (57 tests)
+[01:51:16]     RECOVERED by openai
+[01:51:16] [2/5] calculate_boundary_hallucination::1959 -> cpp (1 tests)
+[01:51:45]     NOT RECOVERED by configured model panel
+[01:51:45] [3/5] identification_hallucination::66 -> cpp (101 tests)
+[01:52:11]     NOT RECOVERED by configured model panel
+[01:52:11] [4/5] identification_hallucination::2041 -> cpp (3 tests)
+[01:52:56]     RECOVERED by openai
+[01:52:56] [5/5] identification_hallucination::4662 -> cpp (2 tests)
+[01:53:24]     RECOVERED by openai
+[01:53:24] Progress: 5/5 instances | pairs attempted this run=5 | recovered this run=3
+[01:54:53] Active models: ['openai', 'anthropic']
+[01:54:53] Loaded 60 recovery instances containing 88 failed translation pairs (limit=None)
+[01:54:53] Resuming: 3 (instance_id, lang) recovery results already recorded
+[01:54:53] [2/60] calculate_boundary_hallucination::1959 -> cpp (1 tests)
+[01:55:28]     NOT RECOVERED by configured model panel
+[01:55:28] [3/60] identification_hallucination::66 -> cpp (101 tests)
+[01:55:43]     NOT RECOVERED by configured model panel
+[01:55:43] Progress: 5/60 instances | pairs attempted this run=2 | recovered this run=0
+[01:55:43] [6/60] identification_hallucination::697 -> cpp (35 tests)
+[01:55:58]     RECOVERED by openai
+[01:55:58] [7/60] identification_hallucination::3981 -> java (21 tests)
+[01:56:33]     RECOVERED by openai
+[01:56:33] [7/60] identification_hallucination::3981 -> cpp (21 tests)
+[01:57:25]     RECOVERED by openai
+[01:57:25] [8/60] logic_deviation::3802 -> java (46 tests)
+[01:57:58]     RECOVERED by openai
+[01:57:58] [9/60] logic_deviation::4102 -> java (25 tests)
+[01:58:23]     RECOVERED by openai
+[01:58:23] [9/60] logic_deviation::4102 -> cpp (25 tests)
+[01:58:42]     RECOVERED by openai
+[01:58:42] [10/60] physical_constraint_hallucination::681 -> java (20 tests)
+[01:59:16]     NOT RECOVERED by configured model panel
+[01:59:16] [10/60] physical_constraint_hallucination::681 -> cpp (20 tests)
+[01:59:43]     RECOVERED by openai
+[01:59:43] Progress: 10/60 instances | pairs attempted this run=10 | recovered this run=7
+[01:59:43] [11/60] physical_constraint_hallucination::2453 -> java (3 tests)
+[02:00:01]     RECOVERED by openai
+[02:00:01] [11/60] physical_constraint_hallucination::2453 -> cpp (3 tests)
+[02:00:16]     RECOVERED by openai
+[02:00:16] [12/60] physical_constraint_hallucination::906 -> java (12 tests)
+[02:00:31]     RECOVERED by openai
+[02:00:31] [12/60] physical_constraint_hallucination::906 -> cpp (12 tests)
+[02:00:44]     RECOVERED by openai
+[02:00:44] [13/60] physical_constraint_hallucination::1685 -> java (4 tests)
+[02:01:00]     RECOVERED by openai
+[02:01:00] [13/60] physical_constraint_hallucination::1685 -> cpp (4 tests)
+[02:01:20]     RECOVERED by openai
+[02:01:20] [14/60] physical_constraint_hallucination::2500 -> java (1 tests)
+[02:01:32]     RECOVERED by openai
+[02:01:32] [15/60] physical_constraint_hallucination::141 -> java (26 tests)
+[02:02:40]     RECOVERED by openai
+[02:02:40] [15/60] physical_constraint_hallucination::141 -> cpp (26 tests)
+[02:03:38]     RECOVERED by openai
+[02:03:38] Progress: 15/60 instances | pairs attempted this run=19 | recovered this run=16
+[02:03:38] [16/60] physical_constraint_hallucination::301 -> java (2 tests)
+[02:03:54]     RECOVERED by openai
+[02:03:54] [17/60] physical_constraint_hallucination::613 -> java (5 tests)
+[02:04:11]     RECOVERED by openai
+[02:04:11] [17/60] physical_constraint_hallucination::613 -> cpp (5 tests)
+[02:04:26]     RECOVERED by openai
+[02:04:26] [18/60] physical_constraint_hallucination::990 -> java (18 tests)
+[02:05:13]     NOT RECOVERED by configured model panel
+[02:05:13] [18/60] physical_constraint_hallucination::990 -> cpp (18 tests)
+[02:06:08]     NOT RECOVERED by configured model panel
+[02:06:08] [19/60] physical_constraint_hallucination::1919 -> java (5 tests)
+[02:06:21]     RECOVERED by openai
+[02:06:21] [20/60] physical_constraint_hallucination::2134 -> java (7 tests)
+[02:06:39]     NOT RECOVERED by configured model panel
+[02:06:39] Progress: 20/60 instances | pairs attempted this run=26 | recovered this run=20
+[02:06:39] [21/60] physical_constraint_hallucination::2602 -> java (1 tests)
+[02:06:53]     NOT RECOVERED by configured model panel
+[02:06:53] [22/60] physical_constraint_hallucination::3841 -> java (2 tests)
+[02:07:15]     RECOVERED by openai
+[02:07:15] [22/60] physical_constraint_hallucination::3841 -> cpp (2 tests)
+[02:07:35]     RECOVERED by openai
+[02:07:35] [23/60] physical_constraint_hallucination::511 -> java (46 tests)
+[02:08:00]     RECOVERED by openai
+[02:08:00] [24/60] physical_constraint_hallucination::281 -> java (29 tests)
+[02:08:15]     NOT RECOVERED by configured model panel
+[02:08:15] [24/60] physical_constraint_hallucination::281 -> cpp (29 tests)
+[02:08:59]     RECOVERED by openai
+[02:08:59] [25/60] physical_constraint_hallucination::706 -> java (27 tests)
+[02:09:20]     RECOVERED by openai
+[02:09:20] [25/60] physical_constraint_hallucination::706 -> cpp (27 tests)
+[02:09:34]     RECOVERED by openai
+[02:09:34] Progress: 25/60 instances | pairs attempted this run=34 | recovered this run=26
+[02:09:34] [26/60] physical_constraint_hallucination::450 -> java (11 tests)
+[02:09:55]     RECOVERED by openai
+[02:09:55] [27/60] physical_constraint_hallucination::984 -> cpp (3 tests)
+[02:10:11]     RECOVERED by openai
+[02:10:11] [28/60] physical_constraint_hallucination::1052 -> java (3 tests)
+[02:10:25]     RECOVERED by openai
+[02:10:25] [28/60] physical_constraint_hallucination::1052 -> cpp (3 tests)
+[02:11:10]     NOT RECOVERED by configured model panel
+[02:11:10] [29/60] physical_constraint_hallucination::3876 -> java (8 tests)
+[02:11:45]     NOT RECOVERED by configured model panel
+[02:11:45] [29/60] physical_constraint_hallucination::3876 -> cpp (8 tests)
+[02:12:09]     RECOVERED by openai
+[02:12:09] [30/60] physical_constraint_hallucination::3923 -> java (15 tests)
+[02:12:27]     RECOVERED by openai
+[02:12:27] Progress: 30/60 instances | pairs attempted this run=41 | recovered this run=31
+[02:12:27] [31/60] physical_constraint_hallucination::3972 -> java (15 tests)
+[02:12:47]     RECOVERED by openai
+[02:12:47] [31/60] physical_constraint_hallucination::3972 -> cpp (15 tests)
+[02:13:29]     RECOVERED by openai
+[02:13:29] [32/60] structural_access_hallucination::1970 -> cpp (7 tests)
+[02:14:05]     RECOVERED by openai
+[02:14:05] [33/60] structural_access_hallucination::3888 -> java (29 tests)
+[02:14:38]     RECOVERED by openai
+[02:14:38] [33/60] structural_access_hallucination::3888 -> cpp (29 tests)
+[02:15:04]     RECOVERED by openai
+[02:15:04] [34/60] structural_access_hallucination::1715 -> java (9 tests)
+[02:15:23]     RECOVERED by openai
+[02:15:23] [35/60] structural_access_hallucination::4584 -> cpp (3 tests)
+[02:15:36]     RECOVERED by openai
+[02:15:36] Progress: 35/60 instances | pairs attempted this run=48 | recovered this run=38
+[02:15:36] [36/60] structural_access_hallucination::629 -> java (39 tests)
+[02:15:56]     NOT RECOVERED by configured model panel
+[02:15:56] [36/60] structural_access_hallucination::629 -> cpp (39 tests)
+[02:16:22]     NOT RECOVERED by configured model panel
+[02:16:22] [37/60] structural_access_hallucination::1794 -> java (11 tests)
+[02:16:57]     RECOVERED by openai
+[02:16:57] [38/60] structural_access_hallucination::1966 -> java (3 tests)
+[02:17:19]     RECOVERED by openai
+[02:17:19] [39/60] structural_access_hallucination::2133 -> java (5 tests)
+[02:17:46]     RECOVERED by openai
+[02:17:46] [40/60] structural_access_hallucination::2222 -> java (5 tests)
+[02:18:05]     RECOVERED by openai
+[02:18:05] Progress: 40/60 instances | pairs attempted this run=54 | recovered this run=42
+[02:18:05] [41/60] structural_access_hallucination::2276 -> java (5 tests)
+[02:18:26]     RECOVERED by openai
+[02:18:26] [42/60] structural_access_hallucination::2460 -> cpp (1 tests)
+[02:18:47]     NOT RECOVERED by configured model panel
+[02:18:47] [43/60] structural_access_hallucination::3813 -> java (41 tests)
+[02:19:07]     RECOVERED by openai
+[02:19:07] [44/60] structural_access_hallucination::343 -> java (2 tests)
+[02:19:24]     RECOVERED by openai
+[02:19:24] [45/60] structural_access_hallucination::1496 -> java (3 tests)
+[02:20:04]     RECOVERED by openai
+[02:20:04] [45/60] structural_access_hallucination::1496 -> cpp (3 tests)
+[02:20:47]     RECOVERED by openai
+[02:20:47] Progress: 45/60 instances | pairs attempted this run=60 | recovered this run=47
+[02:20:47] [46/60] structural_access_hallucination::2218 -> java (6 tests)
+[02:21:00]     RECOVERED by openai
+[02:21:00] [46/60] structural_access_hallucination::2218 -> cpp (6 tests)
+[02:21:18]     RECOVERED by openai
+[02:21:18] [47/60] structural_access_hallucination::2299 -> java (3 tests)
+[02:21:35]     RECOVERED by openai
+[02:21:35] [47/60] structural_access_hallucination::2299 -> cpp (3 tests)
+[02:21:52]     RECOVERED by openai
+[02:21:52] [48/60] structural_access_hallucination::2314 -> java (1 tests)
+[02:22:28]     RECOVERED by openai
+[02:22:28] [48/60] structural_access_hallucination::2314 -> cpp (1 tests)
+[02:23:01]     RECOVERED by openai
+[02:23:01] [49/60] structural_access_hallucination::2493 -> java (1 tests)
+[02:23:25]     RECOVERED by openai
+[02:23:25] [49/60] structural_access_hallucination::2493 -> cpp (1 tests)
+[02:23:44]     RECOVERED by openai
+[02:23:44] [50/60] structural_access_hallucination::2611 -> java (1 tests)
+[02:24:24]     RECOVERED by openai
+[02:24:24] [50/60] structural_access_hallucination::2611 -> cpp (1 tests)
+[02:24:54]     RECOVERED by openai
+[02:24:54] Progress: 50/60 instances | pairs attempted this run=70 | recovered this run=57
+[02:24:54] [51/60] structural_access_hallucination::4450 -> java (6 tests)
+[02:25:24]     RECOVERED by openai
+[02:25:24] [51/60] structural_access_hallucination::4450 -> cpp (6 tests)
+[02:25:54]     RECOVERED by openai
+[02:25:54] [52/60] structural_access_hallucination::4647 -> java (2 tests)
+[02:26:12]     RECOVERED by openai
+[02:26:12] [52/60] structural_access_hallucination::4647 -> cpp (2 tests)
+[02:26:28]     RECOVERED by openai
+[02:26:28] [53/60] structural_access_hallucination::1779 -> java (12 tests)
+[02:26:49]     RECOVERED by openai
+[02:26:49] [54/60] structural_access_hallucination::688 -> cpp (6 tests)
+[02:27:04]     RECOVERED by openai
+[02:27:04] [55/60] structural_access_hallucination::1173 -> cpp (1 tests)
+[02:27:26]     RECOVERED by openai
+[02:27:26] Progress: 55/60 instances | pairs attempted this run=77 | recovered this run=64
+[02:27:26] [56/60] structural_access_hallucination::1862 -> java (10 tests)
+[02:27:46]     RECOVERED by anthropic
+[02:27:46] [56/60] structural_access_hallucination::1862 -> cpp (10 tests)
+[02:27:59]     NOT RECOVERED by configured model panel
+[02:27:59] [57/60] structural_access_hallucination::3741 -> java (8 tests)
+[02:28:20]     RECOVERED by openai
+[02:28:20] [57/60] structural_access_hallucination::3741 -> cpp (8 tests)
+[02:28:39]     RECOVERED by openai
+[02:28:39] [58/60] structural_access_hallucination::3819 -> java (34 tests)
+[02:29:06]     RECOVERED by openai
+[02:29:06] [59/60] structural_access_hallucination::3957 -> java (5 tests)
+[02:29:28]     RECOVERED by openai
+[02:29:28] [59/60] structural_access_hallucination::3957 -> cpp (5 tests)
+[02:29:56]     RECOVERED by openai
+[02:29:56] [60/60] structural_access_hallucination::3975 -> java (21 tests)
+[02:30:36]     RECOVERED by openai
+[02:30:36] Progress: 60/60 instances | pairs attempted this run=85 | recovered this run=71
