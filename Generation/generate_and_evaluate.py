@@ -1,3 +1,4 @@
+
 import os, sys, json, csv, argparse, time
 from collections import Counter
 import requests
@@ -206,8 +207,19 @@ def main():
     ap.add_argument("master")
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--langs", default="python,java,cpp")
+    ap.add_argument("--out", default=None,
+                    help="output prefix; e.g. --out generations_recovered writes "
+                         "generations_recovered.jsonl / _summary.csv / .log "
+                         "(keeps the recovered run separate from the main generations.jsonl)")
     args=ap.parse_args()
     langs=[l.strip() for l in args.langs.split(",")]
+
+    # redirect outputs so a recovered-set run does not append to the main run's files
+    global GEN_JSONL, GEN_CSV, LOG_FILE
+    if args.out:
+        GEN_JSONL = f"{args.out}.jsonl"
+        GEN_CSV   = f"{args.out}_summary.csv"
+        LOG_FILE  = f"{args.out}.log"
 
     data=json.load(open(args.master,encoding="utf-8"))
     if args.limit: data=data[:args.limit]
@@ -259,6 +271,7 @@ def main():
                     rec={
                         "task_id":task["task_id"],
                         "instance_id":task.get("instance_id"),
+                        "source":task.get("source"),   # e.g. "no_solution_recovered" -> keeps the subset fenced
                         "main_category":task.get("main_category"),
                         "hallucination_subcategory":task.get("hallucination_subcategory"),
                         "lang":lang,
@@ -298,13 +311,13 @@ def main():
     log("Building summary CSV ...")
     with open(GEN_JSONL,encoding="utf-8") as f, open(GEN_CSV,"w",newline="",encoding="utf-8") as out:
         w=csv.writer(out)
-        w.writerow(["task_id","main_category","hallucination_subcategory","lang",
+        w.writerow(["task_id","source","main_category","hallucination_subcategory","lang",
                     "model","tier","sample","aggregate_outcome",
                     "generation_error","exec_error","gen_time_sec",
                     "completion_tokens"])
         for line in f:
             d=json.loads(line)
-            w.writerow([d["task_id"],d["main_category"],d["hallucination_subcategory"],
+            w.writerow([d["task_id"],d.get("source"),d["main_category"],d["hallucination_subcategory"],
                         d["lang"],d["model"],d["tier"],d["sample"],
                         d["aggregate_outcome"],d["generation_error"],d["exec_error"],
                         d["gen_time_sec"],(d.get("token_usage") or {}).get("completion_tokens")])
